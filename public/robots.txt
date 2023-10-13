@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://foodgienic.com
+
+# Sitemaps
+Sitemap: https://foodgienic.com/sitemap.xml
