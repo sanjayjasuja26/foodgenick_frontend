@@ -94,10 +94,10 @@ export default function Services() {
                   <div className="lg:max-w-xxxl md:max-w-xxxl mx-auto md:pl-7 pl-2 md:pr-7 pr-2">
                     <div className="flex flex-wrap items-center	justify-between relative">
                       <div className="lg:w-5/12	md:w-5/12">
-                        <h1 className="font-poppins xl:text-6xl font-bold text-dark lg:mb-6 md:mb-2 mb-2.5	md:text-4xl lg:text-5xl text-3xl relative lg:before:content-[attr(before)] before:absolute before:bg-servicetext before:h-16 xl:before:w-38r md:before:w-96 md:before:h-28 before:w-72 before:bg-10%	before:bg-no-repeat	before:-z-10 md:before:-top-2 before:-top-2 before:left-0">
+                        <h1 className="font-montserrate xl:text-6xl font-bold text-dark lg:mb-6 md:mb-2 mb-2.5	md:text-4xl lg:text-5xl text-3xl relative lg:before:content-[attr(before)] before:absolute before:bg-servicetext before:h-16 xl:before:w-38r md:before:w-96 md:before:h-28 before:w-72 before:bg-10%	before:bg-no-repeat	before:-z-10 md:before:-top-2 before:-top-2 before:left-0">
                           {ele.service_First_Section.first_title}
                         </h1>
-                        <p className="font-poppins lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark mb-6">
+                        <p className="font-montserrate lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark mb-6">
                           {ele.service_First_Section.first_descriptions}
                         </p>
                       </div>
@@ -115,10 +115,10 @@ export default function Services() {
 
                 <section className="bg-grey lg:pt-32	bg-center	bg-100% bg-no-repeat md:pt-28 md:pt-32 m:pb-0	md:pt-40 pb-0 pt-10 mt-1 relative">
                   <div className="lg:max-w-xxxl md:max-w-xxxl mx-auto  md:pl-7 pl-2 md:pr-7 pr-2">
-                    <h2 className="font-poppins xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark text-center z-10 relative lg:before:content-[attr(before)] before:absolute before:bg-servicetext before:h-16 xl:before:w-38r md:before:w-96 md:before:h-28 before:w-72 before:bg-10%	before:bg-no-repeat	md:before:-top-2 before:-top-2 before:-left-2.5 before:right-0 before:left-0	before:mx-auto before:-z-10 text-4xl	mb-8">
+                    <h2 className="font-montserrate xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark text-center z-10 relative lg:before:content-[attr(before)] before:absolute before:bg-servicetext before:h-16 xl:before:w-38r md:before:w-96 md:before:h-28 before:w-72 before:bg-10%	before:bg-no-repeat	md:before:-top-2 before:-top-2 before:-left-2.5 before:right-0 before:left-0	before:mx-auto before:-z-10 text-4xl	mb-8">
                       {ele.service_Second_Section.Second_title}
                     </h2>
-                    <p className="font-poppins lg:text-lg text-sm md:text-base font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark text-center lg:max-w-5xl mx-auto">
+                    <p className="font-montserrate lg:text-lg text-sm md:text-base font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark text-center lg:max-w-5xl mx-auto">
                       {ele.service_Second_Section.Second_descriptions}
                     </p>
                   </div>
@@ -144,10 +144,10 @@ export default function Services() {
                             <div className=" md:relative">
                               <div className="flex flex-wrap items-center	justify-between direction-row-inner">
                                 <div className=" lg:w-6/12	md:w-6/12 md:pr-6 service-text">
-                                  <h3 className="font-poppins xl:text-4xl lg:text-3xl font-bold text-dark lg:mb-6 md:mb-6 relative md:text-4xl md:md:mb-2 text-4xl mb-2.5">
+                                  <h3 className="font-montserrate xl:text-4xl lg:text-3xl font-bold text-dark lg:mb-6 md:mb-6 relative md:text-4xl md:md:mb-2 text-4xl mb-2.5">
                                     {element.st_title}
                                   </h3>
-                                  <p className="font-poppins lg:text-lg text-sm md:text-base font-medium text-dark lg:leading-8 md:leading-7 leading-6 text-dark mb-6">
+                                  <p className="font-montserrate lg:text-lg text-sm md:text-base font-medium text-dark lg:leading-8 md:leading-7 leading-6 text-dark mb-6">
                                     {element.st_descriptions}
                                   </p>
                                 </div>
@@ -177,7 +177,7 @@ export default function Services() {
 
         <section className="lg:pt-24 xl:pb-20	md:pb-24 relative md:pt-16 pt-28 pb-20">
           <div className="lg:max-w-xxxl md:max-w-xxxl mx-auto  md:pl-7 md:pr-7 pr-4 pl-4 relative">
-            <h2 className="cxzcz font-poppins xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative lg:before:content-[attr(before)] before:absolute before:bg-reachout xl:before:h-28 xl:before:w-30r md:before:h-28 before:h-28 before:w-64 sm:before:w-72 xl:before:w-30r md:before:w-72 before:bg-10% before:bg-no-repeat	md:before:-top-2 before:-left-0 before:right-0 before:mx-auto before:-z-10 text-4xl mb-8">
+            <h2 className="cxzcz font-montserrate xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative lg:before:content-[attr(before)] before:absolute before:bg-reachout xl:before:h-28 xl:before:w-30r md:before:h-28 before:h-28 before:w-64 sm:before:w-72 xl:before:w-30r md:before:w-72 before:bg-10% before:bg-no-repeat	md:before:-top-2 before:-left-0 before:right-0 before:mx-auto before:-z-10 text-4xl mb-8">
               <span className="text-yellow">Reach</span> Out
             </h2>
             <div className="py-7 xl:max-w-5xl xl:mx-auto drop-shadow-2xl bg-white lg:p-8 rounded-lg mt-4 md:py-9 relative z-10">
@@ -216,7 +216,7 @@ export default function Services() {
                     
                   </div>
                   <div className='text-left w-full pl-2.5'>
-                    <a href="#" className='font-poppins text-base font-semibold	bg-black hover:bg-yellow hover:text-white hover:border-yellow text-white uppercase	inline-block py-3.5 px-12	rounded-md	'>Submit</a>
+                    <a href="#" className='font-montserrate text-base font-semibold	bg-black hover:bg-yellow hover:text-white hover:border-yellow text-white uppercase	inline-block py-3.5 px-12	rounded-md	'>Submit</a>
                   </div>
                 </div> */}
 
@@ -295,7 +295,7 @@ export default function Services() {
                         <div className="text-center w-full">
                           <button
                             type="submit"
-                            className="font-poppins text-base font-semibold	bg-black text-white uppercase	inline-block py-3.5 px-12	rounded-md">
+                            className="font-montserrate text-base font-semibold	bg-black text-white uppercase	inline-block py-3.5 px-12	rounded-md">
                             Submit
                           </button>
                         </div>

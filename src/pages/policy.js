@@ -24,8 +24,8 @@ const policy = () => {
 
     <main>
 <div className='lg:max-w-xxxl md:max-w-xxxl mx-auto md:pl-7 pl-2 md:pr-7 pr-2 pt-28 pb-10'>
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-6 md:text-4xl md:md:mb-2 text-4xl mb-2.5'> Privacy Policy </h2>
-<h2 className='font-poppins lg:text-xl font-bold text-dark lg:mb-6 md:mb-6 md:text-4xl md:md:mb-2 text-4xl mb-2.5'>SCOPE</h2>
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-6 md:text-4xl md:md:mb-2 text-4xl mb-2.5'> Privacy Policy </h2>
+<h2 className='font-montserrate lg:text-xl font-bold text-dark lg:mb-6 md:mb-6 md:text-4xl md:md:mb-2 text-4xl mb-2.5'>SCOPE</h2>
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '>At Foodgienic Innovations Private Limited, we prioritize the protection of your Personal Information. Our commitment to privacy is reflected in this comprehensive Privacy Policy. This Policy outlines our data collection practices and applies to any Personal Information we collect from you through our application and online platforms. Whether we are providing you with our Services or educating you about the Services offered, we strive to maintain the highest level of privacy and security for your information.
  Rest assured that your privacy is our top priority.</p>
 
@@ -36,7 +36,7 @@ CHILDREN</p>
 
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '>Our Services prioritize the safety and privacy of our users. We firmly believe in protecting children under the age of 16, which is why we do not knowingly collect or request Personal Information from them through our online platforms. If you become aware that a child has unintentionally provided us with Personal Information online, we kindly ask that you reach out to us using the instructions provided in our &quot;How To Contact Us&quot; section. Together, we can create a secure online environment for everyone.</p>
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3'> TYPES OF INFORMATION WE COLLECT </h2>
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3'> TYPES OF INFORMATION WE COLLECT </h2>
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '>Generally, Personal Information refers to information that can identify you or has the potential to do so. This does not encompass de-identified or specific aggregate information. We gather Personal Information from you and about you, which may consist of:</p>
 <ul className='list-disc pl-10'>
   <li>
@@ -62,7 +62,7 @@ CHILDREN</p>
 
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '>Our commitment is to ensure that we retain each category of Restaurant Information for as long as it serves a purpose. Whether it&apos;s to meet legal obligations, fulfill your requests, or enhance our Services, we are dedicated to continuous improvement. We believe in the potential for growth and progress, and we remain optimistic about the positive impact our efforts can have.</p>
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> HOW WE COLLECT YOUR INFORMATION</h2>
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> HOW WE COLLECT YOUR INFORMATION</h2>
 
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '>There are multiple ways in which we gather your Personal Information. Let&apos;s take a look at some examples of how we might obtain this information on our Services.
 Directly From You. </p>
@@ -103,7 +103,7 @@ Directly From You. </p>
 
 </ul>
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
 HOW WE USE YOUR INFORMATION </h2>
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '> Examples of how we may use the Personal Information that we collect through our Services include:
  </p>
@@ -155,7 +155,7 @@ HOW WE USE YOUR INFORMATION </h2>
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '> Please note that any further notifications regarding the use or disclosure of personal information will be provided accordingly as necessary.
  </p>
 
- <h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
+ <h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
  HOW WE SHARE YOUR INFORMATION</h2>
 
  <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '> We may share your Personal Information in the following ways:
@@ -203,18 +203,18 @@ In the event that we merge with, acquire, or are acquired by another business en
 
 </ul>
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
 CHOICES REGARDING YOUR INFORMATION </h2>
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '> Users have the option to make choices regarding the usage of their Restaurant Information. These choices are specific to the browser and/or device being used.
  </p>
 
- <h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
+ <h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
  Marketing Communications </h2>
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '> If you would prefer not to receive our marketing communications, it is possible to opt out. However, please keep in mind that you will continue to receive transactional messages from us. These messages include important information about your account and any responses to your inquiries. To initiate the opt-out process for our marketing communications, simply follow the instructions provided with each communication you receive.
  </p>
 
 
- <h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
+ <h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
  Cookies & Other Tracking Technologies:</h2>
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '> As you browse the internet, web applications and websites utilize small text files known as cookies. These cookies are stored by your web browser and serve multiple purposes. In addition to cookies, pixel tags, web beacons, and other tracking technologies are employed to better understand your interaction with this application. For a more comprehensive explanation, please refer to the &quot;How We Use Your Information&quot; section above. 
  </p>
@@ -224,7 +224,7 @@ CHOICES REGARDING YOUR INFORMATION </h2>
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '>You have the option to manage cookies and tracking tools through your web browser. The method may vary depending on the specific tool you are using. If you prefer not to have information collected, including Restaurant Information, through cookies, most browsers offer a straightforward process to automatically decline or choose whether to accept or decline the transfer of specific cookies from applications onto your computer.
 </p>
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
 RIGHTS REGARDING PERSONAL INFORMATION</h2>
 
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '>
@@ -271,7 +271,7 @@ Right to Opt-Out of Targeted Advertising: Targeted advertising is a commonly use
 
 </ul>
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
 SECURITY AND RETENTION </h2>
 
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '>
@@ -285,7 +285,7 @@ Furthermore, please note that certain laws may require us to disclose your infor
 </p>
 
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
 LINKS </h2>
 
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '>
@@ -294,7 +294,7 @@ This Privacy Policy does not cover, and we do not assume responsibility for, the
 wireless service providers or device manufacturers. This includes any Personal Information you provide to these organizations through our Services.
 </p>
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
 HOW TO CONTACT US </h2>
 
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '>
@@ -302,7 +302,7 @@ HOW TO CONTACT US </h2>
 If you have any inquiries, feedback, or apprehensions regarding our privacy practices or this Policy, if you wish to update your information, or if you would like to exercise your Data Subject Rights, please do not hesitate to reach out to us at support@foodgienic.com or at 7814606432.
 </p>
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 
 CHANGES IN POLICY </h2>
 
 <p className='font-montserrate xl:text-lg lg:text-base lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '>

@@ -171,9 +171,9 @@ export default function Pricing() {
                   <div className='flex flex-wrap items-center	justify-between relative'>
                     
                       <div className='lg:w-5/12	md:w-5/12 '>
-                        {/* <h1 className='font-poppins xl:text-6xl font-bold text-dark lg:mb-6 md:mb-2 mb-2.5 md:text-4xl lg:text-5xl text-3xl relative lg:before:content-[attr(before)] before:absolute before:bg-price-text xl:before:h-52 lg:before:h-28 before:h-16 2xl:before:w-500 xl:before:w-500	lg:before:w-96 md:before:w-80	md:before:h-52 sm:before:w-56 before:w-48 before:bg-10% before:bg-no-repeat before:-z-10 xl:before:-top-10  lg:before:-top-10 md:before:-top-10 sm:before:-top-8 before:-top-6 lg:before:-left-2 md:before:left-0'><span className='text-yellow'>R</span>each <span className="text-yellow">2x</span> more <span className='text-yellow'>p</span>rospects</h1> */}
-                        <h1 className='font-poppins xl:text-6xl font-bold text-dark lg:mb-6 md:mb-2 mb-2.5 md:text-4xl lg:text-5xl text-3xl relative lg:before:content-[attr(before)] before:absolute before:bg-price-text xl:before:h-52 lg:before:h-28 before:h-16 2xl:before:w-500 xl:before:w-500	lg:before:w-96 md:before:w-80	md:before:h-52 sm:before:w-56 before:w-48 before:bg-10% before:bg-no-repeat before:-z-10 xl:before:-top-10  lg:before:-top-10 md:before:-top-10 sm:before:-top-8 before:-top-6 lg:before:-left-2 md:before:left-0'>{ele?.price_First_Section?.first_title}</h1>
-                        <p className='font-poppins lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark mb-6'>{ele?.price_First_Section?.first_descriptions}</p>
+                        {/* <h1 className='font-montserrate xl:text-6xl font-bold text-dark lg:mb-6 md:mb-2 mb-2.5 md:text-4xl lg:text-5xl text-3xl relative lg:before:content-[attr(before)] before:absolute before:bg-price-text xl:before:h-52 lg:before:h-28 before:h-16 2xl:before:w-500 xl:before:w-500	lg:before:w-96 md:before:w-80	md:before:h-52 sm:before:w-56 before:w-48 before:bg-10% before:bg-no-repeat before:-z-10 xl:before:-top-10  lg:before:-top-10 md:before:-top-10 sm:before:-top-8 before:-top-6 lg:before:-left-2 md:before:left-0'><span className='text-yellow'>R</span>each <span className="text-yellow">2x</span> more <span className='text-yellow'>p</span>rospects</h1> */}
+                        <h1 className='font-montserrate xl:text-6xl font-bold text-dark lg:mb-6 md:mb-2 mb-2.5 md:text-4xl lg:text-5xl text-3xl relative lg:before:content-[attr(before)] before:absolute before:bg-price-text xl:before:h-52 lg:before:h-28 before:h-16 2xl:before:w-500 xl:before:w-500	lg:before:w-96 md:before:w-80	md:before:h-52 sm:before:w-56 before:w-48 before:bg-10% before:bg-no-repeat before:-z-10 xl:before:-top-10  lg:before:-top-10 md:before:-top-10 sm:before:-top-8 before:-top-6 lg:before:-left-2 md:before:left-0'>{ele?.price_First_Section?.first_title}</h1>
+                        <p className='font-montserrate lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark mb-6'>{ele?.price_First_Section?.first_descriptions}</p>
 
 
                       </div>
@@ -194,8 +194,8 @@ export default function Pricing() {
               <section className='relative xl:pt-44	xl:pb-36 lg:pt-44	lg:pb-36 md:pt-44	md:pb-36 pt-40 pb-24 bg-aboutbg bg-no-repeat bg-cover'>
                 <div className='lg:max-w-xxxl md:max-w-xxxl mx-auto px3.5 new'>
                   
-                    <h3 className='font-poppins xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark text-center z-10 relative lg:before:content-[attr(before)] before:absolute before:bg-price-plan xl:before:h-52 2xl:before:w-l lg:before:h-28 md:before:h-20 xl:before:w-500 lg:before:w-96 md:before:w-72 before:w-72 before:h-20 before:bg-10% before:bg-no-repeat xl:before:-top-8 before:-top-4  md:before:-top-6 before:-left-2.5 before:right-0 before:left-0 before:mx-auto before:-z-10 text-4xl mb-8'>{ele?.price_Second_Section?.Second_title}</h3>
-                    <p className='font-poppins md:text-3xl text-xl	font-semibold  text-dark text-center'>{ele?.price_Second_Section?.Second_descriptions}</p>
+                    <h3 className='font-montserrate xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark text-center z-10 relative lg:before:content-[attr(before)] before:absolute before:bg-price-plan xl:before:h-52 2xl:before:w-l lg:before:h-28 md:before:h-20 xl:before:w-500 lg:before:w-96 md:before:w-72 before:w-72 before:h-20 before:bg-10% before:bg-no-repeat xl:before:-top-8 before:-top-4  md:before:-top-6 before:-left-2.5 before:right-0 before:left-0 before:mx-auto before:-z-10 text-4xl mb-8'>{ele?.price_Second_Section?.Second_title}</h3>
+                    <p className='font-montserrate md:text-3xl text-xl	font-semibold  text-dark text-center'>{ele?.price_Second_Section?.Second_descriptions}</p>
                     <div className='flex flex-wrap justify-center xl:pt-24	lg:pt-24 md:pt-20  pt-16 px-6 sm:px-4'>
                       {ele && ele?.price_Second_Section?.Plans && ele.price_Second_Section.Plans.length > 0 && ele.price_Second_Section.Plans.map((element, ind) => {
                         return (
@@ -205,9 +205,9 @@ export default function Pricing() {
                                 <div className='bg-yellow h-40 w-full relative z-10 text-center text-white'>
                                   <span className="absolute left-0 right-0 m-auto top-138 inset-0 z-0 origin-center rotate-45 h-11 w-11 md:block hidden bg-yellow  border-r-8 border-l-8 border-yellow">
                                   </span>
-                                  <h4 className='font-poppins font-normal pt-4 text-2xl mb-2'>{element.plan}</h4>
-                                  <h3 className='font-poppins text-3xl font-semibold pt-2'>{`( ${element.type})`}</h3>
-                                  {element.moreInfo ? <h3 className='font-poppins text-xs text-lightgrey mt-2 text-white font-normal'>{`( ${element.moreInfo})`}</h3> : null}
+                                  <h4 className='font-montserrate font-normal pt-4 text-2xl mb-2'>{element.plan}</h4>
+                                  <h3 className='font-montserrate text-3xl font-semibold pt-2'>{`( ${element.type})`}</h3>
+                                  {element.moreInfo ? <h3 className='font-montserrate text-xs text-lightgrey mt-2 text-white font-normal'>{`( ${element.moreInfo})`}</h3> : null}
                                 </div>
 
                                 <ul className='px-4 pt-10 pb-3'>
@@ -215,9 +215,9 @@ export default function Pricing() {
                                     return (
                                       <>
                                         {item && item.item && item.item == "x" ?
-                                          <li className=' bg-no-repeat	bg-left	 mb-2.5	font-poppins text-base font-semibold mt-1.5 lg:h-9 sm:h-11 sm:pb-0 pb-2.5 text-black border-b border-slate-300 flex justify-center items-center text-center'><span className='px-3 py-3 block bg-no-repeat bg-mark bg-left-center bg-20 '></span></li> :
+                                          <li className=' bg-no-repeat	bg-left	 mb-2.5	font-montserrate text-base font-semibold mt-1.5 lg:h-9 sm:h-11 sm:pb-0 pb-2.5 text-black border-b border-slate-300 flex justify-center items-center text-center'><span className='px-3 py-3 block bg-no-repeat bg-mark bg-left-center bg-20 '></span></li> :
 
-                                          <li className=' bg-no-repeat bg-left mb-2.5 font-poppins text-base font-semibold mt-1.5 lg:h-9 sm:h-11 text-black border-b border-slate-300 flex justify-center items-center text-center sm:pb-0 pb-2.5'>{item.item} </li>}
+                                          <li className=' bg-no-repeat bg-left mb-2.5 font-montserrate text-base font-semibold mt-1.5 lg:h-9 sm:h-11 text-black border-b border-slate-300 flex justify-center items-center text-center sm:pb-0 pb-2.5'>{item.item} </li>}
                                       </>
                                     )
                                   })}
@@ -225,7 +225,7 @@ export default function Pricing() {
                               </div>
                               <div className='text-center pb-3'>
 
-                                <button className='group inline-block font-poppins text-base font-semibold border border-black rounded-lg ease-in duration-500 bg-white hover:bg-yellow hover:text-white hover:border-yellow py-2 px-5 mb-4' id={`rzp-button${ind}`} onClick={() => { !token ? getlogin() : paynow(`rzp-button${ind}`, "35400", element.plan) }}>Pay Now</button>
+                                <button className='group inline-block font-montserrate text-base font-semibold border border-black rounded-lg ease-in duration-500 bg-white hover:bg-yellow hover:text-white hover:border-yellow py-2 px-5 mb-4' id={`rzp-button${ind}`} onClick={() => { !token ? getlogin() : paynow(`rzp-button${ind}`, "35400", element.plan) }}>Pay Now</button>
                               </div>
                             </div>
                         </div>

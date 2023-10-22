@@ -126,7 +126,7 @@ const router = useRouter()
               <div className='flex flex-wrap'>
                 <div className='lg:w-2/4 md:w-2/4 w-full 4 px-2.5 pb-6'>
                   <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                    <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>First Name*</legend>
+                    <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>First Name*</legend>
                     {/* <input type="text" placeholder="First Name*" className='border-0 bg-transparent outline-0 width-full' /> */}
                     <Field name="firstname" placeholder="First Name*" className='border-0 bg-transparent outline-0 w-full' />
                   </fieldset>
@@ -136,7 +136,7 @@ const router = useRouter()
                 </div>
                 <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                   <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                    <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Last Name*</legend>
+                    <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Last Name*</legend>
                     {/* <input type="text" placeholder="Last Name*" className='border-0 bg-transparent outline-0 width-full' /> */}
                     <Field name="lastName" placeholder="Last Name*" className='border-0 bg-transparent outline-0 w-full' />
                   </fieldset>
@@ -147,7 +147,7 @@ const router = useRouter()
 
                 <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                   <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                    <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Email*</legend>
+                    <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Email*</legend>
                     {/* <input type="text" placeholder="Email*" className='border-0 bg-transparent outline-0 width-full' /> */}
                     <Field name="email" placeholder="Email*" className='border-0 bg-transparent outline-0 w-full' />
                   </fieldset>
@@ -158,7 +158,7 @@ const router = useRouter()
 
                 <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                   <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                    <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Password*</legend>
+                    <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Password*</legend>
                     <Field type={show ? "text" : "password"} name="password" placeholder="password*" className='relative border-0 bg-transparent outline-0 w-full' />
                     {show ? <div className='absolute top-2 right-5 bottom-0' onClick={toggle}><Image src={Hide} alt="hide" /></div> : <div className='absolute top-2 right-5 bottom-0' onClick={toggle}><Image src={ShowImg} alt="show" /></div>}
                   </fieldset>
@@ -168,7 +168,7 @@ const router = useRouter()
                 </div>
                 <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                   <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                    <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Confirm Password*</legend>
+                    <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Confirm Password*</legend>
                     <Field type={showpassword ? "text" : "password"} name="confirmPassword" placeholder="Confirm Password*" className='relative border-0 bg-transparent outline-0 w-full' />
                     {showpassword ? <div className='absolute top-2 right-5 bottom-0' onClick={togglePassword}><Image src={Hide} alt="hide" /></div> : <div className='absolute top-2 right-5 bottom-0' onClick={togglePassword}><Image src={ShowImg} alt="show" /></div>}
                   </fieldset>
@@ -177,7 +177,7 @@ const router = useRouter()
                   </div>
                 </div>
                 <div className='text-center w-full'>
-                  <button type="submit" className='font-poppins text-base font-semibold	bg-black text-white uppercase	inline-block py-3.5 px-12	rounded-md'>Submit</button>
+                  <button type="submit" className='font-montserrate text-base font-semibold	bg-black text-white uppercase	inline-block py-3.5 px-12	rounded-md'>Submit</button>
                 </div>
               </div>
             </Form>

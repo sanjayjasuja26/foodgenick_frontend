@@ -112,8 +112,8 @@ const handleChangeRowsPerPage = (event) => {
             return(
               <div key={index} className='bg-white shadow-light rounded-xl card1 xl:w-1/2 w-full xl:mb-0 lg:mb-4 md:mb-5 sm:mb-5 mb-5 xs:mb-5 sm:p-7 p-5	 flex xl:flex-nowrap flex-wrap  justify-between md:text-start sm:justify-between justify-center hover:bg-blackLight ease-in duration-300 hover:ease-in group hover:text-white'>
                 <div className='left xl:mb-0 lg:mb-4'>
-                  <h5 className='font-poppins font-semibold text-xl'>{ele.name}</h5>
-                  <h3 className='font-poppins text-lightgrey font-normal group-hover:text-white'>{ele.dis}</h3>
+                  <h5 className='font-montserrate font-semibold text-xl'>{ele.name}</h5>
+                  <h3 className='font-montserrate text-lightgrey font-normal group-hover:text-white'>{ele.dis}</h3>
                 </div>
                 <div className='right'>
                   <Image src={ele.image} alt="Restaurant" className="w-14"/>
@@ -130,11 +130,11 @@ const handleChangeRowsPerPage = (event) => {
               <Table sx={{ minWidth: 650 }} aria-label="simple table" className="overflow-x-scroll w-full">
                 <TableHead>
                   <TableRow className="bg-grey-light1">
-                    <TableCell className="font-semibold text-sm text-orange font-poppins w-14	 text-left">Id</TableCell>
-                    <TableCell className="font-semibold text-sm	text-orange font-poppins text-left">First Name</TableCell>
-                    <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Last Name</TableCell>
-                    <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Email</TableCell>
-                    <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Date</TableCell>
+                    <TableCell className="font-semibold text-sm text-orange font-montserrate w-14	 text-left">Id</TableCell>
+                    <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left">First Name</TableCell>
+                    <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Last Name</TableCell>
+                    <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Email</TableCell>
+                    <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Date</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
@@ -143,11 +143,11 @@ const handleChangeRowsPerPage = (event) => {
                       key={index}
                       sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                     >
-                      <TableCell align="right" className="text-sm font-poppins text-lightgrey w-14 text-left">{row.id}</TableCell>
-                      <TableCell align="right" className="text-sm font-poppins text-lightgrey  text-left">{row.firstname}</TableCell>
-                      <TableCell align="right" className="text-sm font-poppins text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">{row.lastName}</TableCell>
-                      <TableCell align="right" className="text-sm font-poppins text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">{row.email}</TableCell>
-                      <TableCell align="right" className="text-sm font-poppins text-lightgrey text-left">{moment(row.createdAt).format('DD-MM-YYYY')}</TableCell>
+                      <TableCell align="right" className="text-sm font-montserrate text-lightgrey w-14 text-left">{row.id}</TableCell>
+                      <TableCell align="right" className="text-sm font-montserrate text-lightgrey  text-left">{row.firstname}</TableCell>
+                      <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">{row.lastName}</TableCell>
+                      <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">{row.email}</TableCell>
+                      <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left">{moment(row.createdAt).format('DD-MM-YYYY')}</TableCell>
                     </TableRow>
                   ))}
                 </TableBody>

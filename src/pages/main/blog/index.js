@@ -59,8 +59,8 @@ export default function Pricing() {
           <div className='lg:max-w-xxxl md:max-w-xxxl mx-auto md:pl-7 pl-2 md:pr-7 pr-2'>
             <div className='flex flex-wrap items-center	justify-between relative'>
               <div className='lg:w-5/12	md:w-5/12'>
-                <h1 className='font-poppins xl:text-6xl font-bold text-dark lg:mb-6 md:mb-2 mb-2.5 md:text-4xl lg:text-5xl text-3xl relative lg:before:content-[attr(before)] before:absolute before:bg-blog-text xl:before:h-48 md:before:h-28 before:h-16 md:before:w-80 sm:before:w-56 before:w-48 before:bg-10% before:bg-no-repeat before:-z-10 md:before:-top-6 sm:before:-top-8 before:-top-6 lg:before:-left-2 md:before:left-0'>Blog</h1>
-                <p className='font-poppins lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 mb-6 text-sm'>Foodgienic is the symbol of hygienic food. Our mission is to authenticate all commercial kitchens in India. So every meal outside your home is Hygienic, Nutritious, and Delicious. Just look for our authentication on restaurants and enjoy.</p>
+                <h1 className='font-montserrate xl:text-6xl font-bold text-dark lg:mb-6 md:mb-2 mb-2.5 md:text-4xl lg:text-5xl text-3xl relative lg:before:content-[attr(before)] before:absolute before:bg-blog-text xl:before:h-48 md:before:h-28 before:h-16 md:before:w-80 sm:before:w-56 before:w-48 before:bg-10% before:bg-no-repeat before:-z-10 md:before:-top-6 sm:before:-top-8 before:-top-6 lg:before:-left-2 md:before:left-0'>Blog</h1>
+                <p className='font-montserrate lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 mb-6 text-sm'>Foodgienic is the symbol of hygienic food. Our mission is to authenticate all commercial kitchens in India. So every meal outside your home is Hygienic, Nutritious, and Delicious. Just look for our authentication on restaurants and enjoy.</p>
               </div>
               <div className='lg:w-7/12 md:w-7/12 relative z-10 md:hidden lg:-mr-3.5	-mr-2'>
 
@@ -72,7 +72,7 @@ export default function Pricing() {
 
         <section className='relative xl:pt-64	xl:pb-36 xl:py-20 md:pt-40 md:pb-20 md:pt-16 pt-28 pb-20 bg-aboutbg bg-contain bg-no-repeat bg-repeat'>
           <div className='lg:max-w-xxxl md:max-w-xxxl mx-auto  pl-7'>
-            <h2 className='font-poppins xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 text-4xl mb-8'>Latest Post</h2>
+            <h2 className='font-montserrate xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 text-4xl mb-8'>Latest Post</h2>
 
 
 
@@ -98,14 +98,14 @@ export default function Pricing() {
                       </div>
                       <div className='py-5'>
                         <h3 className='bg-grey3 text-lightgrey text-base inline-block	rounded-lg font-semibold	px-3 py-1.5 blog-list-heading'>{ele?.title}</h3>
-                        <p className="font-poppins font-medium text-dark text-base leading-6 text-sm line-clamp-3 mb-0.5 mt-3 list-blog-text" dangerouslySetInnerHTML={{ __html: ele?.description }}></p>
+                        <p className="font-montserrate font-medium text-dark text-base leading-6 text-sm line-clamp-3 mb-0.5 mt-3 list-blog-text" dangerouslySetInnerHTML={{ __html: ele?.description }}></p>
                         <Link href={{pathname: `/main/blog-detail/${ele?.id}`}} className='md:w-2/6 w-full mb-5 text-orange text-sm underline	'> Read More </Link>
                         <div className='flex items-center mt-3'>
                           <div className='flex items-center	mr-5'>
                             <Image src={user} alt='user' width={10} height={10} className='rounded-full h-9	w-9	object-cover mr-2' />
                             <h4 className='text-grey4 text-sm	font-medium	'>Tracey Wilson</h4>
                           </div>
-                          <p className='text-sm text-grey4 font-poppins'> {moment(ele?.updatedAt).format('DD-MM-YYYY')}</p>
+                          <p className='text-sm text-grey4 font-montserrate'> {moment(ele?.updatedAt).format('DD-MM-YYYY')}</p>
                         </div>
                       </div>
 

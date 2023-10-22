@@ -21,7 +21,7 @@ export default function Forgot() {
         <section className='lg:pt-24 xl:pb-52 lg:pb-0 relative md:pt-16 pt-12 mb-28 md:mb-0'>
             <div className='hidden'>
                 <div className='lg:max-w-xxxl md:max-w-xxxl mx-auto px-3.5 relative'>
-                    <h2 class="text-login font-poppins xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-5 md:mb-5 text-center z-10 relative text-4xl pb-5 pt-5"><span class="text-yellow">Forgot</span> Pasword</h2>
+                    <h2 class="text-login font-montserrate xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-5 md:mb-5 text-center z-10 relative text-4xl pb-5 pt-5"><span class="text-yellow">Forgot</span> Pasword</h2>
                 </div>
                 <div className='py-7 xl:max-w-5xl xl:mx-auto bg-grey lg:p-8 rounded-lg drop-shadow-sm border-t-2 border-black mt-4 md:py-9 relative z-10 mb-5'>
                     <Formik>
@@ -29,12 +29,12 @@ export default function Forgot() {
                             <div className='flex flex-wrap flex-col items-center'>
                                 <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                                 <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                                    <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>User Name</legend>
+                                    <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>User Name</legend>
                                     <Field name="email" placeholder="Enter User Name" className='border-0 bg-transparent outline-0 w-full' />
                                     </fieldset>
                                 </div>
                                 <div className='text-center w-full'>
-                                    <button type="submit" className='font-poppins text-base font-semibold	bg-black hover:bg-yellow hover:text-white duration-700 hover:border-yellow text-white uppercase	inline-block py-3.5 px-12	rounded-md'>Forgot Password</button>
+                                    <button type="submit" className='font-montserrate text-base font-semibold	bg-black hover:bg-yellow hover:text-white duration-700 hover:border-yellow text-white uppercase	inline-block py-3.5 px-12	rounded-md'>Forgot Password</button>
                                 </div>
                             </div>
                         </Form>
@@ -43,7 +43,7 @@ export default function Forgot() {
             </div>
             <div className=''>
                 <div className='lg:max-w-xxxl md:max-w-xxxl mx-auto px-3.5 relative'>
-                    <h2 class="text-login font-poppins xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-5 md:mb-5 text-center z-10 relative text-4xl pb-5 pt-5"><span class="text-yellow">Reset</span> Pasword</h2>
+                    <h2 class="text-login font-montserrate xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-5 md:mb-5 text-center z-10 relative text-4xl pb-5 pt-5"><span class="text-yellow">Reset</span> Pasword</h2>
                 </div>
                 <div className='py-7 xl:max-w-5xl xl:mx-auto bg-grey lg:p-8 rounded-lg drop-shadow-sm border-t-2 border-black mt-4 md:py-9 relative z-10 mb-5'>
                     <Formik>
@@ -51,18 +51,18 @@ export default function Forgot() {
                             <div className='flex flex-wrap flex-col items-center'>
                                 <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                                     <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2 pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                                        <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Password*</legend>
+                                        <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Password*</legend>
                                         <Field name="email" placeholder="Password" className='border-0 bg-transparent outline-0 w-full' />
                                     </fieldset>
                                 </div>
                                 <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                                     <fieldset className='bg-white rounded-md drop-shadow px-5 pt-2 pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                                        <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Confirm Password*</legend>
+                                        <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Confirm Password*</legend>
                                         <Field name="email" placeholder="Confirm Password" className='border-0 bg-transparent outline-0 w-full' />
                                     </fieldset>
                                 </div>
                                 <div className='text-center w-full'>
-                                    <button type="submit" className='font-poppins text-base font-semibold bg-black hover:bg-yellow hover:text-white duration-700 hover:border-yellow text-white uppercase inline-block py-3.5 px-12	rounded-md'>Reset Password</button>
+                                    <button type="submit" className='font-montserrate text-base font-semibold bg-black hover:bg-yellow hover:text-white duration-700 hover:border-yellow text-white uppercase inline-block py-3.5 px-12	rounded-md'>Reset Password</button>
                                 </div>
                             </div>
                         </Form>

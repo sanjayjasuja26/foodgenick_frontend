@@ -23,11 +23,11 @@ const terms = () => {
     <div>
       <main>
     <div className='lg:max-w-xxxl md:max-w-xxxl mx-auto md:pl-7 pl-2 md:pr-7 pr-2 pt-28 pb-10'>
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-6 md:text-4xl md:md:mb-2 text-4xl mb-2.5'>Terms and Conditions for Foodgienic Innovations Private Limited</h2>
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-6 md:text-4xl md:md:mb-2 text-4xl mb-2.5'>Terms and Conditions for Foodgienic Innovations Private Limited</h2>
 <p className='font-montserrate xl:text-lg lg:text-base xl:text-lg lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '>Please read these terms and conditions carefully before using the services provided by Foodgienic Innovations Private Limited (&quot;Foodgienic,&quot; &quot;we,&quot; or &quot;us&quot;). These terms and conditions outline the rights and obligations of Foodgienic and its customers (&quot;you&quot; or &quot;customer&quot;) in relation to the hygienic services provided to commercial kitchens. By using our services, you agree to comply with and be bound by these terms and conditions. 
 If you do not agree with any part of these terms and conditions, you must not use our services.</p>
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3'> 1. Definitions </h2>
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3'> 1. Definitions </h2>
 <ul className='list-disc pl-10'>
  <li> 
     <p className='font-montserrate lg:text-base xl:text-lg lg:leading-8 text-dark leading-8 mb-2 md:text-sm md:leading-7 text-sm leading-7 '>&quot;Foodgienic&quot; is the term used to refer to the company itself, Foodgienic Innovations Private Limited. This is the legal entity that provides the services mentioned in the content.</p>
@@ -48,7 +48,7 @@ If you do not agree with any part of these terms and conditions, you must not us
 
 </ul>
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 2. Service Agreement </h2>
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 2. Service Agreement </h2>
 
 <ul className='list-disc pl-10'>
  <li> 
@@ -71,7 +71,7 @@ If you do not agree with any part of these terms and conditions, you must not us
 </ul>
 
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'>3. Scope of Services </h2>
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'>3. Scope of Services </h2>
 
 <ul className='list-disc pl-10'>
  <li> 
@@ -92,7 +92,7 @@ If you do not agree with any part of these terms and conditions, you must not us
 
   </ul>
 
-  <h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 4. Payment Terms </h2>
+  <h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 4. Payment Terms </h2>
 
   <ul className='list-disc pl-10'>
 
@@ -106,7 +106,7 @@ If you do not agree with any part of these terms and conditions, you must not us
   </li>
 </ul>
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 5. Cancellation and Termination </h2>
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 5. Cancellation and Termination </h2>
   <ul className='list-disc pl-10'>
 
   <li> 
@@ -122,7 +122,7 @@ If you do not agree with any part of these terms and conditions, you must not us
   </li>
   </ul>
 
-  <h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 6. Intellectual Property </h2>
+  <h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 6. Intellectual Property </h2>
 
   <ul className='list-disc pl-10'>
 
@@ -134,7 +134,7 @@ The customer agrees not to use, reproduce, modify, or distribute Foodgienic&apos
   </ul>
 
 
-  <h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 7. Limitation of Liability </h2>
+  <h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 7. Limitation of Liability </h2>
 
 <ul className='list-disc pl-10'>
 
@@ -149,7 +149,7 @@ The customer agrees not to use, reproduce, modify, or distribute Foodgienic&apos
 
 </ul>
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 8. Confidentiality </h2>
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 8. Confidentiality </h2>
 
 <ul className='list-disc pl-10'>
 
@@ -164,7 +164,7 @@ This clause informs the customer that Foodgienic may handle their personal data 
 
 </ul>
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 9. Governing Law and Jurisdiction </h2>
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 9. Governing Law and Jurisdiction </h2>
 
 <ul className='list-disc pl-10'>
 
@@ -176,7 +176,7 @@ Any dispute arising out of or in connection with these terms and conditions shal
 </ul>
 
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 10. Amendments </h2>
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 10. Amendments </h2>
 
 <ul className='list-disc pl-10'>
 
@@ -189,7 +189,7 @@ Any modifications to these terms and conditions will be effective upon posting o
 
 
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 11. Entire Agreement </h2>
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-3 md:text-4xl md:md:mb-2 text-4xl mb-3 mt-11'> 11. Entire Agreement </h2>
 
 <ul className='list-disc pl-10'>
 
@@ -201,7 +201,7 @@ By using Foodgienic&apos;s services, you acknowledge that you have read, underst
 </ul>
 
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-6 md:text-4xl md:md:mb-2 text-4xl mb-2.5 mt-10'>Shipping and Delivery </h2>
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-6 md:text-4xl md:md:mb-2 text-4xl mb-2.5 mt-10'>Shipping and Delivery </h2>
 <p className='font-montserrate xl:text-lg lg:text-base xl:text-lg lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '>At Foodgienic, we understand the importance of timely and reliable shipping and delivery services in the food industry. As a leading hygienic service provider for restaurants and other food outlets&apos; kitchens, we prioritize the safe and efficient transportation of our products.</p>
 
 <ul className='list-decimal pl-10'>
@@ -228,7 +228,7 @@ By using Foodgienic&apos;s services, you acknowledge that you have read, underst
 
 </ul>
 
-<h2 className='font-poppins lg:text-2xl font-bold text-dark lg:mb-6 md:mb-6 md:text-4xl md:md:mb-2 text-4xl mb-2.5 mt-10'> Refund Policy </h2>
+<h2 className='font-montserrate lg:text-2xl font-bold text-dark lg:mb-6 md:mb-6 md:text-4xl md:md:mb-2 text-4xl mb-2.5 mt-10'> Refund Policy </h2>
 <p className='font-montserrate xl:text-lg lg:text-base xl:text-lg lg:leading-8 text-dark leading-8 mb-6 md:text-sm md:leading-7 text-sm leading-7 '> At Foodgienic, we are committed to providing exceptional services to our customers. If, for any reason, you are not satisfied with our services, we have a comprehensive refund policy in place to address your concerns. </p>
 
 

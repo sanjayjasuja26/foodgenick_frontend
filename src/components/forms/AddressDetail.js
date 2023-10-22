@@ -168,7 +168,7 @@ export default function AddressDetail(props) {
 
                     <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                       <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                        <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Street Address*</legend>
+                        <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Street Address*</legend>
                         <Field name="streetAddress" placeholder="Street Address*" className='border-0 bg-transparent outline-0 w-full' />
                       </fieldset>
                       <div className='text-red mt-1'>
@@ -178,7 +178,7 @@ export default function AddressDetail(props) {
 
                     <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                       <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                        <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>City*</legend>
+                        <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>City*</legend>
                         <Field name="city" placeholder="City*" className='border-0 bg-transparent outline-0 w-full' />
                       </fieldset>
 
@@ -189,7 +189,7 @@ export default function AddressDetail(props) {
 
                     <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                       <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                        <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Region/State/Province*</legend>
+                        <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Region/State/Province*</legend>
                         <Field name="state" placeholder="Region/State/Province*" className='border-0 bg-transparent outline-0 w-full' />
                       </fieldset>
 
@@ -200,7 +200,7 @@ export default function AddressDetail(props) {
 
                     <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                       <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                        <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Postal/Zip Code*</legend>
+                        <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Postal/Zip Code*</legend>
                         <Field name="postalZipCode" placeholder="Postal/Zip Code*" className='border-0 bg-transparent outline-0 w-full' />
                       </fieldset>
                       <div className='text-red mt-1'>
@@ -212,7 +212,7 @@ export default function AddressDetail(props) {
 
                     <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                       <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                        <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Country*</legend>
+                        <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Country*</legend>
                         <Field name="country" placeholder="Country*" className='border-0 bg-transparent outline-0 w-full' />
                       </fieldset>
                       <div className='text-red mt-1'>
@@ -221,7 +221,7 @@ export default function AddressDetail(props) {
                     </div>
                     <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                       <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                        <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Description*</legend>
+                        <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Description*</legend>
                         <Field name="description" placeholder="description*" className='border-0 bg-transparent outline-0 w-full' />
                       </fieldset>
                       <div className='text-red mt-1'>
@@ -296,7 +296,7 @@ export default function AddressDetail(props) {
 
                     <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                       <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                        <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Password*</legend>
+                        <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Password*</legend>
                         <Field type={show ? "text" : "password"} name="password" placeholder="password*" className='relative border-0 bg-transparent outline-0 w-full' />
                         {show ? <div className='absolute top-2 right-5 bottom-0' onClick={toggle}><Image src={Hide} alt="hide" /></div> : <div className='absolute top-2 right-5 bottom-0' onClick={toggle}><Image src={ShowImg} alt="show" /></div>}
                       </fieldset>
@@ -306,7 +306,7 @@ export default function AddressDetail(props) {
                     </div>
                     <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                       <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                        <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Confirm Password*</legend>
+                        <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Confirm Password*</legend>
                         <Field type={showpassword ? "text" : "password"} name="confirmPassword" placeholder="Confirm Password*" className='relative border-0 bg-transparent outline-0 w-full' />
                         {showpassword ? <div className='absolute top-2 right-5 bottom-0' onClick={togglePassword}><Image src={Hide} alt="hide" /></div> : <div className='absolute top-2 right-5 bottom-0' onClick={togglePassword}><Image src={ShowImg} alt="show" /></div>}
                       </fieldset>
@@ -315,8 +315,8 @@ export default function AddressDetail(props) {
                       </div>
                     </div>
                     <div className='text-center w-full flex justify-center gap-5'>
-                      <button onClick={_handleBack} className='font-poppins text-base font-semibold	bg-black text-white uppercase	inline-block py-3.5 px-12	rounded-md	'>Back</button>
-                      <button type="submit" className='font-poppins text-base font-semibold	bg-black text-white uppercase	inline-block py-3.5 px-12	rounded-md'>Submit</button>
+                      <button onClick={_handleBack} className='font-montserrate text-base font-semibold	bg-black text-white uppercase	inline-block py-3.5 px-12	rounded-md	'>Back</button>
+                      <button type="submit" className='font-montserrate text-base font-semibold	bg-black text-white uppercase	inline-block py-3.5 px-12	rounded-md'>Submit</button>
                     </div>
                   </div>
 

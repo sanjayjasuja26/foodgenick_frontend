@@ -112,12 +112,12 @@ const [activeTab, setActiveTab] = useState('profile');
 
         return(
       <div key={index}>
-        <section className='bg-bg xl:bg-right-bottom bg-100% md:pt-4 xl:pb-32 md:pb-12 relative pt-12 pb-28	'>
+        <section className='bg-bg xl:bg-right-bottom bg-100% md:pt-4 relative pt-12 pb-12	'>
           <div className='lg:max-w-xxxl md:max-w-xxxl mx-auto  md:pl-7 pl-2 md:pr-7 pr-2 '>
             <div className='flex flex-wrap items-center	justify-between relative'>
               <div className='lg:w-5/12	md:w-5/12'>
-                  <h1 className='font-poppins xl:text-6xl font-bold text-dark lg:mb-6 md:mb-2 mb-2.5 md:text-4xl lg:text-5xl text-3xl  relative lg:before:content-[attr(before)] before:absolute before:bg-eat md:before:h-28 before:h-16 before:h-1 xl:before:w-61r md:before:w-40r sm:before:w-30r before:w-80 before:bg-10%	before:bg-no-repeat	before:-z-10 xl:before:-top-6 md:before:-top-2 before:-top-2.5 lg:before:-left-0 md:before:left-0'>{ele?.home_First_Section?.first_title}</h1>
-                  <p className='font-poppins lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 mb-6 text-sm'>{ele?.home_First_Section?.first_descriptions}</p>
+                  <h1 className='font-montserrate lg:text-5xl font-bold text-dark lg:mb-6 md:mb-2 mb-2.5 md:text-4xl  text-3xl  relative lg:before:content-[attr(before)] before:absolute before:bg-eat md:before:h-28 before:h-16 before:h-1 xl:before:w-61r md:before:w-40r sm:before:w-30r before:w-80 before:bg-10%	before:bg-no-repeat	before:-z-10 xl:before:-top-6 md:before:-top-2 before:-top-2.5 lg:before:-left-0 md:before:left-0'>{ele?.home_First_Section?.first_title}</h1>
+                  <p className='font-montserrate  text-sm md:text-lg font-medium text-dark md:leading-8 leading-6 mb-6 text-sm'>{ele?.home_First_Section?.first_descriptions}</p>
               </div>
               <div className='lg:w-7/12 md:w-7/12 relative z-10'>
                 
@@ -145,8 +145,8 @@ const [activeTab, setActiveTab] = useState('profile');
             <div className='flex flex-wrap items-center	justify-between'>
               <div className='lg:w-5/12	md:w-5/12'>
                 
-                  <h2 className='font-poppins xl:text-6xl lg:text-5xl font-bold text-dark lg:mb-6 md:mb-6 relative lg:before:content-[attr(before)] before:absolute before:bg-about xl:before:h-24 md:before:h-20 before:h-20 xl:before:w-96 md:before:w-52 before:w-52 before:w-24 before:bg-10% before:bg-no-repeat before:-z-10 xl:before:-top-6 md:before:-top-2 before:-top-1 md:text-4xl md:md:mb-2 text-4xl mb-2.5 '>{ele?.home_Second_Section?.Second_title}</h2>
-                  <p className='font-poppins lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark mb-6 '>{ele?.home_Second_Section?.Second_descriptions}</p>
+                  <h2 className='font-montserrate lg:text-5xl font-bold text-dark lg:mb-6 md:mb-6 relative lg:before:content-[attr(before)] before:absolute before:bg-about xl:before:h-24 md:before:h-20 before:h-20 xl:before:w-96 md:before:w-52 before:w-52 before:w-24 before:bg-10% before:bg-no-repeat before:-z-10 xl:before:-top-6 md:before:-top-2 before:-top-1 md:text-4xl md:md:mb-2 text-4xl mb-2.5 '>{ele?.home_Second_Section?.Second_title}</h2>
+                  <p className='font-montserrate  text-sm md:text-lg font-medium text-dark md:leading-8 leading-6 text-dark mb-6 '>{ele?.home_Second_Section?.Second_descriptions}</p>
                 
               </div>
               <div className='lg:w-6/12 md:w-6/12'>
@@ -179,7 +179,7 @@ const [activeTab, setActiveTab] = useState('profile');
 
         <section className='bg-service lg:py-56	bg-center	bg-100% bg-no-repeat md:py-32 pb-24	pt-28'>
           <div className=' lg:max-w-xxxl md:max-w-xxxl mx-auto  md:pl-7 pl-2 md:pr-7 pr-2'>
-              <h2 className='font-poppins xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative lg:before:content-[attr(before)] before:absolute before:bg-servicetext xl:before:h-28 before:h-20 xl:before:w-42r sm:before:w-96 before:w-80 before:bg-10% before:bg-no-repeat md:before:-top-5 before:-top-4 xl:before:-left-2.5 md:before:-left-2.5 before:right-0 before:left-0 before:mx-auto before:-z-10 text-4xl mb-8'>{ele?.home_Third_Section?.Third_title}</h2>
+              <h2 className='font-montserrate lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative lg:before:content-[attr(before)] before:absolute before:bg-servicetext xl:before:h-28 before:h-20 xl:before:w-42r sm:before:w-96 before:w-80 before:bg-10% before:bg-no-repeat md:before:-top-5 before:-top-4 xl:before:-left-2.5 md:before:-left-2.5 before:right-0 before:left-0 before:mx-auto before:-z-10 text-4xl mb-8'>{ele?.home_Third_Section?.Third_title}</h2>
             
               <Slider className="lg:max-w-xxxl md:max-w-xxxl max-w-md mx-auto pl-7 pr-7"   {...carouselSettings}>
                 { ele && ele?.home_Third_Section && ele?.home_Third_Section?.Third_descriptions_section?.map((item,index)=>{
@@ -197,7 +197,7 @@ const [activeTab, setActiveTab] = useState('profile');
                             height={616}
                           />
                         </div>
-                        <h3 className='font-poppins xl:text-2xl lg:text-lg font-semibold text-center xl:mt-11 lg:mt-8 xl:max-w-xs xl:mx-auto md:mt-3.5 mt-3	'>{item.descriptions}</h3>
+                        <h3 className='font-montserrate xl:text-2xl lg:text-lg font-semibold text-center xl:mt-11 lg:mt-8 xl:max-w-xs xl:mx-auto md:mt-3.5 mt-3	'>{item.descriptions}</h3>
                     
                     </div>
                 
@@ -217,7 +217,7 @@ const [activeTab, setActiveTab] = useState('profile');
         <section className="button-name-slider pt-24 md:pt-0">
         {resdata && resdata.data && resdata.data.length > 0 ?
         <>
-        <h2 className='font-poppins xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative before:content="Verified Restaurants" xl:before:h-52 xl:before:w-3/6 lg:before:h-52 before:h-12 lg:before:w-96 md:before:w-72 before:w-72 before:h-12 md:before:w-96 before:bg-10% before:bg-no-repeat xl:before:-top-10 before:-top-1 lg:before:-top-6 md:before:-top-2.5 before:-left-2.5 before:right-0 before:left-0 before:mx-auto before:-z-10 text-4xl mb-8'>Verified Restaurants</h2>
+        <h2 className='font-montserrate lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative before:content="Verified Restaurants" xl:before:h-52 xl:before:w-3/6 lg:before:h-52 before:h-12 lg:before:w-96 md:before:w-72 before:w-72 before:h-12 md:before:w-96 before:bg-10% before:bg-no-repeat xl:before:-top-10 before:-top-1 lg:before:-top-6 md:before:-top-2.5 before:-left-2.5 before:right-0 before:left-0 before:mx-auto before:-z-10 text-4xl mb-8'>Verified Restaurants</h2>
           <Slider className="lg:max-w-xxxl md:max-w-xxxl max-w-md mx-auto md:pl-7 pl-2 md:pr-7 pr-2"   {...carouselSettings}>
             {resdata && resdata.data && resdata.data.length > 0 && resdata.data.map((val, index) => {
               return (
@@ -227,16 +227,17 @@ const [activeTab, setActiveTab] = useState('profile');
                       <div className='w-full bg-white drop-shadow-xl rounded-xl truncate'>
                         <div className='image w-full'>
                           <div className='bg-orange-400 py-2 px-3 text-10 text-white text-center w-48 absolute top-4 -left-14 -rotate-45'>Verified</div>
-                          <Image className='w-full truncate'
+                          <Image className='w-full truncate object-cover h-64	'
                             alt="Standard Operating Procedures"
-                            src={service3}
-                          // className='object-cover h-full w-full ease-in duration-700 hover:h-500 hover:w-500'
+                            src={val.image}
+                            width={400}
+                            height={400}
                           />
                         </div>
                         <div className='content p-5'>
-                          <div className='mb-2 restaurant-kitchen'><h2 className='text-base font-semibold font-poppins'> <Image style={{ display: "inline-block" }} className='mr-3' src="/assets/images/kitchen.svg" alt="kitchen" width={18} height={18}/> {val.restaurantname}</h2></div>
-                          <div className='mb-2 restaurant-address'><p className='text-base font-semibold font-poppins'> <Image style={{ display: "inline-block" }} className='mr-3' src="/assets/images/location.svg" alt="location" width={18} height={18}/> {val.streetAddress},{val.city},{val.state}</p></div>
-                          <div className='mb-2 restaurant-phn'><p className='text-base font-semibold font-poppins'> <Image style={{ display: "inline-block" }} className='mr-3' src="/assets/images/tel.svg" alt="phone" width={18} height={18}/> 9874563210</p></div>
+                          <div className='mb-2 restaurant-kitchen'><h2 className='text-base font-semibold font-montserrate'> <Image style={{ display: "inline-block" }} className='mr-3' src="/assets/images/kitchen.svg" alt="kitchen" width={18} height={18}/> {val.restaurantname}</h2></div>
+                          <div className='mb-2 restaurant-address'><p className='text-base font-semibold font-montserrate'> <Image style={{ display: "inline-block" }} className='mr-3' src="/assets/images/location.svg" alt="location" width={18} height={18}/> {val.streetAddress},{val.city},{val.state}</p></div>
+                          <div className='mb-2 restaurant-phn'><p className='text-base font-semibold font-montserrate'> <Image style={{ display: "inline-block" }} className='mr-3' src="/assets/images/tel.svg" alt="phone" width={18} height={18}/> {val.phone}</p></div>
                         
                         </div>
                        
@@ -257,7 +258,7 @@ const [activeTab, setActiveTab] = useState('profile');
             <div className='flex justify-center	flex-wrap'>
               <div className='mx-2.5 w-full mb-3.5 sm:mb-0 sm:w-auto'>
                
-                  <h4 onClick={userToggleForm} className={`lg:w-72 md:w-56 text-center lg:py-6	md:py-3.5	font-poppins lg:text-lg md:text-sm	text-dark hover:text-orange-300 font-semibold bg-white border border-black rounded-md	cursor-pointer relative before:content-[attr(before)] before:absolute before:border-t-15 before:border-x-10 before:border-t-black hover:border-orange-300 before:border-x-transparent	before:left-10	before:-bottom-4 	py-2.5 px-3.5 text-sm ${conditionUser}`}>Signup as User <Image alt="Sign Up"
+                  <h4 onClick={userToggleForm} className={`lg:w-72 md:w-56 text-center lg:py-6	md:py-3.5	font-montserrate lg:text-lg md:text-sm	text-dark hover:text-orange-300 font-semibold bg-white border border-black rounded-md	cursor-pointer relative before:content-[attr(before)] before:absolute before:border-t-15 before:border-x-10 before:border-t-black hover:border-orange-300 before:border-x-transparent	before:left-10	before:-bottom-4 	py-2.5 px-3.5 text-sm ${conditionUser}`}>Signup as User <Image alt="Sign Up"
                     src={user}
                     className='lg:w-6	inline-block ml-1 md:w-4	w-4'
                   />
@@ -266,7 +267,7 @@ const [activeTab, setActiveTab] = useState('profile');
               </div>
               <div className='mx-2.5 w-full mb-3.5 sm:mb-0 sm:w-auto'>
                 
-                  <h4 onClick={RestaurantToggleForm} className={`lg:w-72 md:w-56 text-center lg:py-6	md:py-3.5	font-poppins lg:text-lg md:text-sm	text-dark hover:text-orange-300 font-semibold bg-white border border-black rounded-md	cursor-pointer relative before:content-[attr(before)] before:absolute before:border-t-15 before:border-x-10 before:border-t-black	hover:border-orange-300 before:border-x-transparent	before:left-10 before:-bottom-4 py-2.5 px-3.5 text-sm ${conditionRestaurant}`}>Signup as Restaurant <Image alt="Restaurant"
+                  <h4 onClick={RestaurantToggleForm} className={`lg:w-72 md:w-56 text-center lg:py-6	md:py-3.5	font-montserrate lg:text-lg md:text-sm	text-dark hover:text-orange-300 font-semibold bg-white border border-black rounded-md	cursor-pointer relative before:content-[attr(before)] before:absolute before:border-t-15 before:border-x-10 before:border-t-black	hover:border-orange-300 before:border-x-transparent	before:left-10 before:-bottom-4 py-2.5 px-3.5 text-sm ${conditionRestaurant}`}>Signup as Restaurant <Image alt="Restaurant"
                     src={restaurant}
                     className='lg:w-6	inline-block	ml-1 md:w-4 w-4'
                   />
@@ -317,7 +318,7 @@ const [activeTab, setActiveTab] = useState('profile');
             <div className='flex flex-wrap justify-between items-center'>
               <div className='lg:w-5/12 md:w-5/12 relative md:order-none order-2'>
 
-                <h2 className='font-poppins text-lg lg:text-6xl font-bold text-dark lg:mb-6 md:mb-6 p-1'>Contact</h2>
+                <h2 className='font-montserrate text-lg lg:text-5xl font-bold text-dark lg:mb-6 md:mb-6 p-1'>Contact</h2>
 
                   <ul>
                     <li className='font-montserrate text-sm md:text-base	font-semibold	text-black100 mb-1.5 hover:text-yellow p-1'>
@@ -538,7 +539,7 @@ const [activeTab, setActiveTab] = useState('profile');
 
         <section className='bg-grey py-16 hidden'>
           <div className='lg:max-w-xxxl md:max-w-xxxl mx-auto  md:pl-7 pl-2 md:pr-7 pr-2'>
-            <h2 className='font-poppins text-2xl	 lg:text-6xl font-bold text-dark lg:mb-9 mb-9 p-1 text-center'>Let’s get started</h2>
+            <h2 className='font-montserrate text-2xl	 lg:text-6xl font-bold text-dark lg:mb-9 mb-9 p-1 text-center'>Let’s get started</h2>
             <div className='flex justify-center flex-wrap'>
               <button className='border	border-orange md:px-9 py-3 px-6 text-lg	text-orange md:mr-3 ease-in duration-500 hover:bg-yellow hover:text-white w-full md:mb-0 mb-3 md:w-auto	'>New to Food Genic Labs?</button>
               <button className='border	border-black md:px-9 py-3 px-4 text-lg text-black md:ml-3 ease-in duration-500 hover:bg-black hover:text-white w-full md:w-auto	'>Already to Food Genic Labs?</button>

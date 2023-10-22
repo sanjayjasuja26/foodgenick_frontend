@@ -41,7 +41,7 @@ const OwnerDetail = (props) => {
     <div className='flex flex-wrap'>
     <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
       <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-        <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Food OutLet/Restaurant*</legend>
+        <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Food OutLet/Restaurant*</legend>
         <Field name="restaurantname" placeholder="Restaurant Name*" className='border-0 bg-transparent outline-0 w-full' />
       </fieldset>
       <div className='text-red mt-1'>
@@ -50,7 +50,7 @@ const OwnerDetail = (props) => {
     </div>
     <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
       <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-        <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Company*</legend>
+        <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Company*</legend>
         <Field name="companyName" placeholder="Company Name*" className='border-0 bg-transparent outline-0 w-full' />
       </fieldset>
       <div className='text-red mt-1'>
@@ -59,7 +59,7 @@ const OwnerDetail = (props) => {
     </div>
     <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
       <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-        <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>GST*</legend>
+        <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>GST*</legend>
         <Field name="gst" placeholder="Add GST*" className='border-0 bg-transparent outline-0 w-full' />
       </fieldset>
       <div className='text-red mt-1'>
@@ -68,7 +68,7 @@ const OwnerDetail = (props) => {
     </div>
     <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
       <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-        <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Kitchen Area</legend>
+        <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Kitchen Area</legend>
         <Field name="kitchenArea" placeholder="(In Sq. Ft.)" className='border-0 bg-transparent outline-0 w-full' />
       </fieldset>
       <div className='text-red mt-1'>
@@ -76,8 +76,8 @@ const OwnerDetail = (props) => {
       </div>
     </div>
     <div className='text-center w-full flex justify-center gap-5'>
-      <button onClick={_handleBack} className='font-poppins text-base font-semibold	bg-black text-white uppercase	inline-block py-3.5 px-12	rounded-md	'>Back</button>
-      <button type="submit" className='font-poppins text-base font-semibold	bg-black text-white uppercase	inline-block py-3.5 px-12	rounded-md	'>Next</button>
+      <button onClick={_handleBack} className='font-montserrate text-base font-semibold	bg-black text-white uppercase	inline-block py-3.5 px-12	rounded-md	'>Back</button>
+      <button type="submit" className='font-montserrate text-base font-semibold	bg-black text-white uppercase	inline-block py-3.5 px-12	rounded-md	'>Next</button>
     </div>
    
 

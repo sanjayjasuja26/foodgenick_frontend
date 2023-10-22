@@ -102,7 +102,7 @@ const AddRestaurant = (props) => {
 
                                 <section className=''>
                                     <div className='md:max-w-xl mx-auto md:p-4 relative'>
-                                        <h2 className="font-poppins text-2xl font-bold text-dark z-10 relative mb-3 border-b pb-2.5 ">{editRestaurantData && editRestaurantData.id ? `Edit` : `Add`} Restaurant</h2>
+                                        <h2 className="font-montserrate text-2xl font-bold text-dark z-10 relative mb-3 border-b pb-2.5 ">{editRestaurantData && editRestaurantData.id ? `Edit` : `Add`} Restaurant</h2>
                                         <div className='mt-4 relative z-10'>
                                             <Formik
                                                 initialValues={{

@@ -40,7 +40,7 @@ const UserDetail = (props) => {
     <div className='flex flex-wrap mt-8'>
     <div className='lg:w-2/4 md:w-2/4 w-full 4 px-2.5 pb-6'>
     <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0 '>
-      <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>First Name*</legend>
+      <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>First Name*</legend>
       <Field name="firstname" placeholder="First Name*" className='border-0 bg-transparent outline-0 w-full' />
     </fieldset>
     <div className='text-red mt-1'>
@@ -49,7 +49,7 @@ const UserDetail = (props) => {
   </div>
   <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
     <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-      <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Last Name*</legend>
+      <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Last Name*</legend>
       <Field name="lastName" placeholder="Last Name*" className='border-0 bg-transparent outline-0 w-full' />
     </fieldset>
     <div className='text-red mt-1'>
@@ -58,7 +58,7 @@ const UserDetail = (props) => {
   </div>
   <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
     <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-      <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Email*</legend>
+      <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Email*</legend>
       <Field name="email" placeholder="Email*" className='border-0 bg-transparent outline-0 w-full' />
     </fieldset>
     <div className='text-red mt-1'>
@@ -67,7 +67,7 @@ const UserDetail = (props) => {
   </div>
   <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
     <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-      <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Phone*</legend>
+      <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Phone*</legend>
       <Field name="phone" placeholder="Contact No.*" className='border-0 bg-transparent outline-0 w-full' />
     </fieldset>
     <div className='text-red mt-1'>
@@ -76,7 +76,7 @@ const UserDetail = (props) => {
   </div>
    
   <div className='text-center w-full'>
-      <button type="submit" className='font-poppins text-base font-semibold	bg-black hover:bg-yellow hover:text-white duration-700 hover:border-yellow text-white uppercase	inline-block py-3.5 px-12	rounded-md'>Next</button>
+      <button type="submit" className='font-montserrate text-base font-semibold	bg-black hover:bg-yellow hover:text-white duration-700 hover:border-yellow text-white uppercase	inline-block py-3.5 px-12	rounded-md'>Next</button>
     </div>
   </div>
   </Form>

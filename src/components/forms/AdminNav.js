@@ -10,7 +10,7 @@ const AdminNav = () => {
         <div className='sidebar xl:w-1/4 lg:w-2/5 md:w-1/2 min-h-sm sm:w-full w-full relative'> 
           <div className='md:fixed bg-white shadow-light mt-4 rounded-xl p-4 md:h-70 xl:w-350px md:w-30% lg:w-3/12 w-full h-screen	'>
             <ul>
-              <li className='group font-poppins text-sm font-semibold p-4 rounded-xl active:bg-blackLight hover:bg-blackLight text-darkgrey hover:text-white active:text-white'>
+              <li className='group font-montserrate text-sm font-semibold p-4 rounded-xl active:bg-blackLight hover:bg-blackLight text-darkgrey hover:text-white active:text-white'>
                 <Link href='/admin/dashboard'  className='flex items-center text-16'>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <rect className='group-hover:stroke-white'x="4" y="4" width="6" height="7" rx="1" stroke="#3B3B3B" stroke-width="2" stroke-linejoin="round"/>
@@ -21,7 +21,7 @@ const AdminNav = () => {
                 <span className='ml-2'> Dashboard</span>
                 </Link>
               </li>
-              <li className='group font-poppins text-sm font-semibold p-4 rounded-xl active:bg-blackLight hover:bg-blackLight text-darkgrey hover:text-white active:text-white'>
+              <li className='group font-montserrate text-sm font-semibold p-4 rounded-xl active:bg-blackLight hover:bg-blackLight text-darkgrey hover:text-white active:text-white'>
                 <Link href='/admin/pages'   className='flex items-center text-16'>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path className='group-hover:stroke-white group-active:stroke-white' d="M16 8V8C16.93 8 17.395 8 17.7765 8.10222C18.8117 8.37962 19.6204 9.18827 19.8978 10.2235C20 10.605 20 11.07 20 12V18C20 19.1046 19.1046 20 18 20V20C16.8954 20 16 19.1046 16 18V7.2C16 6.07989 16 5.51984 15.782 5.09202C15.5903 4.71569 15.2843 4.40973 14.908 4.21799C14.4802 4 13.9201 4 12.8 4H7.2C6.07989 4 5.51984 4 5.09202 4.21799C4.71569 4.40973 4.40973 4.71569 4.21799 5.09202C4 5.51984 4 6.07989 4 7.2V16.8C4 17.9201 4 18.4802 4.21799 18.908C4.40973 19.2843 4.71569 19.5903 5.09202 19.782C5.51984 20 6.07989 20 7.2 20H18" stroke="#3B3B3B" stroke-width="2"/>
@@ -31,7 +31,7 @@ const AdminNav = () => {
                   <span className='ml-2'> Pages</span>
                 </Link>
               </li>
-              {/* <li className='group font-poppins text-sm font-semibold  p-4 ro unded-xl active:bg-blackLight hover:bg-blackLight text-darkgrey hover:text-white active:text-white'>
+              {/* <li className='group font-montserrate text-sm font-semibold  p-4 ro unded-xl active:bg-blackLight hover:bg-blackLight text-darkgrey hover:text-white active:text-white'>
                 <Link href='/admin/services'  className='flex items-center text-16'>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path className='group-hover:stroke-white group-active:stroke-white' d="M16 8V8C16.93 8 17.395 8 17.7765 8.10222C18.8117 8.37962 19.6204 9.18827 19.8978 10.2235C20 10.605 20 11.07 20 12V18C20 19.1046 19.1046 20 18 20V20C16.8954 20 16 19.1046 16 18V7.2C16 6.07989 16 5.51984 15.782 5.09202C15.5903 4.71569 15.2843 4.40973 14.908 4.21799C14.4802 4 13.9201 4 12.8 4H7.2C6.07989 4 5.51984 4 5.09202 4.21799C4.71569 4.40973 4.40973 4.71569 4.21799 5.09202C4 5.51984 4 6.07989 4 7.2V16.8C4 17.9201 4 18.4802 4.21799 18.908C4.40973 19.2843 4.71569 19.5903 5.09202 19.782C5.51984 20 6.07989 20 7.2 20H18" stroke="#3B3B3B" stroke-width="2"/>
@@ -41,7 +41,7 @@ const AdminNav = () => {
                   <span className='ml-2'>Services</span>
                 </Link>
               </li> */}
-              {/* <li className='group font-poppins text-sm font-semibold  p-4 rounded-xl active:bg-blackLight hover:bg-blackLight text-darkgrey hover:text-white active:text-white'>
+              {/* <li className='group font-montserrate text-sm font-semibold  p-4 rounded-xl active:bg-blackLight hover:bg-blackLight text-darkgrey hover:text-white active:text-white'>
                 <Link href='/admin/price'  className='flex items-center text-16'>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path className='group-hover:stroke-white group-active:stroke-white' d="M16 8V8C16.93 8 17.395 8 17.7765 8.10222C18.8117 8.37962 19.6204 9.18827 19.8978 10.2235C20 10.605 20 11.07 20 12V18C20 19.1046 19.1046 20 18 20V20C16.8954 20 16 19.1046 16 18V7.2C16 6.07989 16 5.51984 15.782 5.09202C15.5903 4.71569 15.2843 4.40973 14.908 4.21799C14.4802 4 13.9201 4 12.8 4H7.2C6.07989 4 5.51984 4 5.09202 4.21799C4.71569 4.40973 4.40973 4.71569 4.21799 5.09202C4 5.51984 4 6.07989 4 7.2V16.8C4 17.9201 4 18.4802 4.21799 18.908C4.40973 19.2843 4.71569 19.5903 5.09202 19.782C5.51984 20 6.07989 20 7.2 20H18" stroke="#3B3B3B" stroke-width="2"/>
@@ -51,7 +51,7 @@ const AdminNav = () => {
                   <span className='ml-2'>Pricing</span>
                 </Link>
               </li> */}
-              {/* <li className='group font-poppins text-sm font-semibold  p-4 rounded-xl active:bg-blackLight hover:bg-blackLight text-darkgrey hover:text-white active:text-white'>
+              {/* <li className='group font-montserrate text-sm font-semibold  p-4 rounded-xl active:bg-blackLight hover:bg-blackLight text-darkgrey hover:text-white active:text-white'>
                 <Link href='/admin/users'  className='flex items-center text-16'>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path className='group-hover:stroke-white group-active:stroke-white' d="M16 8V8C16.93 8 17.395 8 17.7765 8.10222C18.8117 8.37962 19.6204 9.18827 19.8978 10.2235C20 10.605 20 11.07 20 12V18C20 19.1046 19.1046 20 18 20V20C16.8954 20 16 19.1046 16 18V7.2C16 6.07989 16 5.51984 15.782 5.09202C15.5903 4.71569 15.2843 4.40973 14.908 4.21799C14.4802 4 13.9201 4 12.8 4H7.2C6.07989 4 5.51984 4 5.09202 4.21799C4.71569 4.40973 4.40973 4.71569 4.21799 5.09202C4 5.51984 4 6.07989 4 7.2V16.8C4 17.9201 4 18.4802 4.21799 18.908C4.40973 19.2843 4.71569 19.5903 5.09202 19.782C5.51984 20 6.07989 20 7.2 20H18" stroke="#3B3B3B" stroke-width="2"/>
@@ -61,7 +61,7 @@ const AdminNav = () => {
                   <span className='ml-2'>User</span>
                 </Link>
               </li> */}
-              {/* <li className='group font-poppins text-sm font-semibold  p-4 rounded-xl active:bg-blackLight hover:bg-blackLight text-darkgrey hover:text-white active:text-white'>
+              {/* <li className='group font-montserrate text-sm font-semibold  p-4 rounded-xl active:bg-blackLight hover:bg-blackLight text-darkgrey hover:text-white active:text-white'>
                 <Link href='#'  className='flex items-center text-16'>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path className='group-hover:stroke-white group-active:stroke-white' d="M16 8V8C16.93 8 17.395 8 17.7765 8.10222C18.8117 8.37962 19.6204 9.18827 19.8978 10.2235C20 10.605 20 11.07 20 12V18C20 19.1046 19.1046 20 18 20V20C16.8954 20 16 19.1046 16 18V7.2C16 6.07989 16 5.51984 15.782 5.09202C15.5903 4.71569 15.2843 4.40973 14.908 4.21799C14.4802 4 13.9201 4 12.8 4H7.2C6.07989 4 5.51984 4 5.09202 4.21799C4.71569 4.40973 4.40973 4.71569 4.21799 5.09202C4 5.51984 4 6.07989 4 7.2V16.8C4 17.9201 4 18.4802 4.21799 18.908C4.40973 19.2843 4.71569 19.5903 5.09202 19.782C5.51984 20 6.07989 20 7.2 20H18" stroke="#3B3B3B" stroke-width="2"/>
@@ -71,7 +71,7 @@ const AdminNav = () => {
                   <span className='ml-2'>Settings</span>
                 </Link>
               </li> */}
-              <li className='group font-poppins text-sm font-semibold  p-4 rounded-xl active:bg-blackLight hover:bg-blackLight text-darkgrey hover:text-white active:text-white'>
+              <li className='group font-montserrate text-sm font-semibold  p-4 rounded-xl active:bg-blackLight hover:bg-blackLight text-darkgrey hover:text-white active:text-white'>
                 <Link href='/admin/restaurants'  className='flex items-center text-16'>
                   <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path className='group-hover:stroke-white group-active:stroke-white' d="M16 8V8C16.93 8 17.395 8 17.7765 8.10222C18.8117 8.37962 19.6204 9.18827 19.8978 10.2235C20 10.605 20 11.07 20 12V18C20 19.1046 19.1046 20 18 20V20C16.8954 20 16 19.1046 16 18V7.2C16 6.07989 16 5.51984 15.782 5.09202C15.5903 4.71569 15.2843 4.40973 14.908 4.21799C14.4802 4 13.9201 4 12.8 4H7.2C6.07989 4 5.51984 4 5.09202 4.21799C4.71569 4.40973 4.40973 4.71569 4.21799 5.09202C4 5.51984 4 6.07989 4 7.2V16.8C4 17.9201 4 18.4802 4.21799 18.908C4.40973 19.2843 4.71569 19.5903 5.09202 19.782C5.51984 20 6.07989 20 7.2 20H18" stroke="#3B3B3B" stroke-width="2"/>

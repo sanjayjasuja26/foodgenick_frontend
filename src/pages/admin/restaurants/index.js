@@ -119,33 +119,33 @@ export default function Restaurant() {
               <Table sx={{ minWidth: 650 }} aria-label="simple table" className="overflow-x-scroll w-full">
                 <TableHead>
                   <TableRow className="bg-grey-light1">
-                    <TableCell className="font-semibold text-sm text-orange font-poppins w-14	 text-left">S.No</TableCell>
-                    <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Name</TableCell>
-                    <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Restaurant</TableCell>
-                    <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Address</TableCell>
-                    <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">City</TableCell>
-                    <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">State</TableCell>
-                    <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Phone</TableCell>
-                    <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Edit</TableCell>
-                    <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Delete</TableCell>
-                    <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Verify</TableCell>
+                    <TableCell className="font-semibold text-sm text-orange font-montserrate w-14	 text-left">S.No</TableCell>
+                    <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Name</TableCell>
+                    <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Restaurant</TableCell>
+                    <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Address</TableCell>
+                    <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">City</TableCell>
+                    <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">State</TableCell>
+                    <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Phone</TableCell>
+                    <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Edit</TableCell>
+                    <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Delete</TableCell>
+                    <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Verify</TableCell>
                   </TableRow>
                 </TableHead>
                 <TableBody>
                   {testArr && testArr?.sort((a,b) => a.id - b.id)?.map((val, index) => {
                     return (
                       <TableRow className="odd:bg-white even:bg-grey-light1" key={index} sx={{ '&:last-child td, &:last-child th': { border: 0 } }}>
-                        <TableCell align="right" className="text-sm font-poppins text-lightgrey w-14 text-left">{val.id}</TableCell>
-                        <TableCell align="right" className="text-sm font-poppins text-lightgrey  text-left">{val.firstname}</TableCell>
-                        <TableCell align="right" className="text-sm font-poppins text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">{val.restaurantname}</TableCell>
-                        <TableCell align="right" className="text-sm font-poppins text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">{val.streetAddress}</TableCell>
-                        <TableCell align="right" className="text-sm font-poppins text-lightgrey text-left">{val.city}</TableCell>
-                        <TableCell align="right" className="text-sm font-poppins text-lightgrey text-left">{val.state}</TableCell>
-                        <TableCell align="right" className="text-sm font-poppins text-lightgrey text-left" >{val.phone}</TableCell>
-                        <TableCell align="right" className="text-sm font-poppins text-lightgrey text-left" onClick={() => handleClickOpen(val)} > 
+                        <TableCell align="right" className="text-sm font-montserrate text-lightgrey w-14 text-left">{val.id}</TableCell>
+                        <TableCell align="right" className="text-sm font-montserrate text-lightgrey  text-left">{val.firstname}</TableCell>
+                        <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">{val.restaurantname}</TableCell>
+                        <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">{val.streetAddress}</TableCell>
+                        <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left">{val.city}</TableCell>
+                        <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left">{val.state}</TableCell>
+                        <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left" >{val.phone}</TableCell>
+                        <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left" onClick={() => handleClickOpen(val)} > 
                           <div className="delete-btn bg-green border-green border rounded-lg w-14 rounded-3xl p-1 hover:bg-white cursor-pointer"><Image src={edit} alt="delete" className="w-4  mx-auto"/></div>
                         </TableCell>
-                        <TableCell align="right" className="text-sm font-poppins text-lightgrey text-left" onClick={() => deleteHandleClickOpen(val)}>
+                        <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left" onClick={() => deleteHandleClickOpen(val)}>
                           <div className="action-btn  bg-red border-red border rounded-lg w-14 rounded-3xl p-1 hover:bg-white cursor-pointer"><Image src={bin2} alt="delete" className="w-4 mx-auto"/></div>
                         </TableCell>
                         <TableCell align="right" className="text-16 text-lightgrey w-1/5 text-left"> <Switch checked={val && val.isVerified && val.isVerified} onChange={(e) => handleChange(e.target.checked,val?.id)} /></TableCell>

@@ -51,8 +51,8 @@ export default function About() {
           <div className='lg:max-w-xxxl md:max-w-xxxl mx-auto  md:pl-7 pl-2	'>
             <div className='flex flex-wrap items-center	justify-between relative'>
               <div className='w-full lg:w-5/12	'>
-                  <h1 className='font-poppins xl:text-6xl font-bold text-dark lg:mb-6 md:mb-2 mb-2.5	md:text-4xl lg:text-5xl text-3xl relative lg:before:content-[attr(before)] before:absolute before:bg-aboutus before:bg-10%	before:bg-no-repeat	before:-z-10 xl:before:-top-6 lg:before:-top-6 md:before:-top-2 before:-top-1 lg:before:-left-2.5 md:before:left-0 xl:before:w-34r md:before:h-28 before:h-20 md:before:w-80 before:w-60'> {ele.about_First_Section.first_title}</h1>
-                  <p className='font-poppins lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark mb-6'>{ele.about_First_Section.first_descriptions} </p>
+                  <h1 className='font-montserrate xl:text-6xl font-bold text-dark lg:mb-6 md:mb-2 mb-2.5	md:text-4xl lg:text-5xl text-3xl relative lg:before:content-[attr(before)] before:absolute before:bg-aboutus before:bg-10%	before:bg-no-repeat	before:-z-10 xl:before:-top-6 lg:before:-top-6 md:before:-top-2 before:-top-1 lg:before:-left-2.5 md:before:left-0 xl:before:w-34r md:before:h-28 before:h-20 md:before:w-80 before:w-60'> {ele.about_First_Section.first_title}</h1>
+                  <p className='font-montserrate lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark mb-6'>{ele.about_First_Section.first_descriptions} </p>
               </div>
               <div className='lg:w-7/12 md:full relative z-10 '>
                 <Image
@@ -69,15 +69,15 @@ export default function About() {
         <section className='relative xl:pt-64	xl:pb-36 xl:py-20 md:pt-40 md:pb-20 md:pt-16 pt-28 pb-20 bg-aboutbg'>
           <div className='lg:max-w-xxxl md:max-w-xxxl mx-auto  pl-7	pr-7 '>
             
-              <h2 className='font-poppins xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative lg:before:content-[attr(before)] before:absolute before:bg-story-text xl:before:h-28 xl:before:w-5/12 md:before:h-28 before:h-12 lg:before:w-96 md:before:w-80		 before:w-72 before:bg-10%	before:bg-no-repeat xl:before:-top-6 before:-top-2 lg:before:-top-9 md:before:-top-5 before:-left-2.5 before:right-0 before:left-0	before:mx-auto before:-z-10 text-4xl mb-8'>{ele.about_Second_Section.Second_title}</h2>
+              <h2 className='font-montserrate xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative lg:before:content-[attr(before)] before:absolute before:bg-story-text xl:before:h-28 xl:before:w-5/12 md:before:h-28 before:h-12 lg:before:w-96 md:before:w-80		 before:w-72 before:bg-10%	before:bg-no-repeat xl:before:-top-6 before:-top-2 lg:before:-top-9 md:before:-top-5 before:-left-2.5 before:right-0 before:left-0	before:mx-auto before:-z-10 text-4xl mb-8'>{ele.about_Second_Section.Second_title}</h2>
               <div className='flex flex-wrap items-center	justify-between relative'>
                 <div className='lg:w-5/12	md:w-5/12 relative z-10'>
 
-                  <p className='font-poppins lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark mb-6'>
+                  <p className='font-montserrate lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark mb-6'>
                   {/* <strong>Foodgienic</strong>  */}
                   {ele.about_Second_Section.Second_descriptions}
                   </p>
-                  <p className='font-poppins lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark'><strong>{ele.about_Second_Section.Second_moreInfo}</strong></p>
+                  <p className='font-montserrate lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark'><strong>{ele.about_Second_Section.Second_moreInfo}</strong></p>
                 </div>
                 <div className='lg:w-6/12 md:w-6/12 sm:w-3/5 sm:mx-auto bg-gradient-to-r from-black to-white p-1 rounded-b-full rounded-tl-full rounded-tr-180 md:mt-0	mt-8	relative z-10 '>
                   <div className='overflow-hidden rounded-b-full rounded-tl-full rounded-tr-180 relative test'>
@@ -111,7 +111,7 @@ export default function About() {
         <section className='relative xl:pb-36 md:pb-20 xl:pt-36 md:pt-20 pt-28 pb-20'>
           <div className='lg:max-w-xxxl md:max-w-xxxl mx-auto  pl-7	pr-7 '>
             
-              <h2 className='font-poppins xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative lg:before:content-[attr(before)] before:absolute before:bg-our-story xl:before:h-28 xl:before:w-5/12 md:before:h-28 before:h-12 lg:before:w-96 md:before:w-80 before:w-72 before:bg-10%	before:bg-no-repeat xl:before:-top-9 before:-top-4 lg:before:-top-9 md:before:-top-5 before:-left-2.5 before:right-0 before:left-0	before:mx-auto before:-z-10 text-4xl mb-8'>{ele.about_Third_Section.Third_title}
+              <h2 className='font-montserrate xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative lg:before:content-[attr(before)] before:absolute before:bg-our-story xl:before:h-28 xl:before:w-5/12 md:before:h-28 before:h-12 lg:before:w-96 md:before:w-80 before:w-72 before:bg-10%	before:bg-no-repeat xl:before:-top-9 before:-top-4 lg:before:-top-9 md:before:-top-5 before:-left-2.5 before:right-0 before:left-0	before:mx-auto before:-z-10 text-4xl mb-8'>{ele.about_Third_Section.Third_title}
               </h2>
               <div className='flex flex-wrap items-center	justify-between relative'>
                 <div className='w-full relative z-10'>
@@ -119,7 +119,7 @@ export default function About() {
                   return(
                     <div key={index}>
 
-                  <p className='font-poppins lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark mb-6 text-center'>
+                  <p className='font-montserrate lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark mb-6 text-center'>
                    {element.descriptions}
                   </p>
                     </div>

@@ -104,12 +104,12 @@ export default function Restaurant() {
                 <Table sx={{ minWidth: 650 }} aria-label="simple table" className="overflow-x-scroll w-full happy">
                   <TableHead>
                     <TableRow className="bg-grey-light1">
-                      <TableCell className="font-semibold text-sm text-orange font-poppins w-14	 text-left">S.No</TableCell>
-                      <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Title</TableCell>
-                      <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Descriptions</TableCell>
-                      <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Image</TableCell>
-                      <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Edit</TableCell>
-                      <TableCell className="font-semibold text-sm	text-orange font-poppins text-left" align="right">Delete</TableCell>
+                      <TableCell className="font-semibold text-sm text-orange font-montserrate w-14	 text-left">S.No</TableCell>
+                      <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Title</TableCell>
+                      <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Descriptions</TableCell>
+                      <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Image</TableCell>
+                      <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Edit</TableCell>
+                      <TableCell className="font-semibold text-sm	text-orange font-montserrate text-left" align="right">Delete</TableCell>
                     </TableRow>
                   </TableHead>
                   <TableBody>
@@ -120,13 +120,13 @@ export default function Restaurant() {
                           sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                         >
 
-                          <TableCell align="right" className="text-sm font-poppins text-lightgrey w-14 text-left">{val.id}</TableCell>
-                          <TableCell align="right" className="text-sm font-poppins text-lightgrey  text-left">{val.title}</TableCell>
-                          <TableCell align="right" className="text-sm font-poppins text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">{val.description}</TableCell>
-                          <TableCell align="right" className="text-sm font-poppins text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">{val.image}</TableCell>
-                          <TableCell align="right" className="text-sm font-poppins text-lightgrey text-left" onClick={() => handleClickOpenEdit(val,"isEdit")} >
+                          <TableCell align="right" className="text-sm font-montserrate text-lightgrey w-14 text-left">{val.id}</TableCell>
+                          <TableCell align="right" className="text-sm font-montserrate text-lightgrey  text-left">{val.title}</TableCell>
+                          <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">{val.description}</TableCell>
+                          <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">{val.image}</TableCell>
+                          <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left" onClick={() => handleClickOpenEdit(val,"isEdit")} >
                             <Image src={edit} alt="delete" className="w-4	mr-2 cursor-pointer	"/></TableCell>
-                          <TableCell align="right" className="text-sm font-poppins text-lightgrey text-left" onClick={() => deleteHandleClickOpen(val)}><Image src={bin2} alt="delete" className="w-4	mr-2 cursor-pointer"/></TableCell>
+                          <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left" onClick={() => deleteHandleClickOpen(val)}><Image src={bin2} alt="delete" className="w-4	mr-2 cursor-pointer"/></TableCell>
                         </TableRow>
 
 

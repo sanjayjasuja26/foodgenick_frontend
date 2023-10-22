@@ -45,13 +45,13 @@ useEffect(()=>{
               <div className='flex flex-wrap items-center	justify-between relative'>
                 <div className='lg:w-4/5 md:w-5/12'>
                   <h3 className='bg-grey3 text-lightgrey text-base inline-block rounded-lg font-semibold px-3 py-1.5'>Foodgienic</h3>
-                  <h1 className='text-32 leading-52 text-dark font-bold font-poppins py-5'>Foodgienic is the symbol of hygienic food. Our mission is to authenticate all commercial kitchens in India.</h1>
+                  <h1 className='text-32 leading-52 text-dark font-bold font-montserrate py-5'>Foodgienic is the symbol of hygienic food. Our mission is to authenticate all commercial kitchens in India.</h1>
                   <div className='flex items-center'>
                     <div className='flex items-center	mr-5'>
                       <Image src={user} alt='user' className='rounded-full h-9	w-9	object-cover mr-2' />
                       <h4 className='text-grey4 text-base	font-medium	'>Tracey Wilson</h4>
                     </div>
-                    <p className='text-sm text-grey4 font-poppins'> {moment(ele?.updatedAt).format('DD-MM-YYYY')}</p>
+                    <p className='text-sm text-grey4 font-montserrate'> {moment(ele?.updatedAt).format('DD-MM-YYYY')}</p>
                   </div>
                 </div>
                 <div className='lg:w-7/12 md:w-7/12 relative z-10 md:hidden lg:-mr-3.5	-mr-2'>
@@ -91,7 +91,7 @@ useEffect(()=>{
                 <div className='md:w-24% w-full'>
                   <div className='rounded-lg overflow-hidden bg-white	shadow-2'>
                     <div className='bg-black p-3'>
-                      <h3 className='text-white	font-poppins font-medium text-xl'>Latest Posts</h3>
+                      <h3 className='text-white	font-montserrate font-medium text-xl'>Latest Posts</h3>
                     </div>
                     <div className='p-2.5'>
                       <div className='flex flex-wrap justify-between items-center border-grey-light border rounded-md p-1.5 mb-2'>
@@ -125,8 +125,8 @@ useEffect(()=>{
             <div className='lg:max-w-xxxl md:max-w-xxxl mx-auto  md:pl-7 pl-2	'>
               <div className='flex flex-wrap items-center	justify-between relative'>
                 <div className='w-full lg:w-5/12	'>
-                    <h1 className='font-poppins xl:text-6xl font-bold text-dark lg:mb-6 md:mb-2 mb-2.5	md:text-4xl lg:text-5xl text-3xl relative lg:before:content-[attr(before)] before:absolute before:bg-aboutus before:bg-10%	before:bg-no-repeat	before:-z-10 xl:before:-top-6 lg:before:-top-6 md:before:-top-2 before:-top-1 lg:before:-left-2.5 md:before:left-0 xl:before:w-34r md:before:h-28 before:h-20 md:before:w-80 before:w-60'> {ele?.title}</h1>
-                    <p className='font-poppins lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark mb-6'>{ele?.title} </p>
+                    <h1 className='font-montserrate xl:text-6xl font-bold text-dark lg:mb-6 md:mb-2 mb-2.5	md:text-4xl lg:text-5xl text-3xl relative lg:before:content-[attr(before)] before:absolute before:bg-aboutus before:bg-10%	before:bg-no-repeat	before:-z-10 xl:before:-top-6 lg:before:-top-6 md:before:-top-2 before:-top-1 lg:before:-left-2.5 md:before:left-0 xl:before:w-34r md:before:h-28 before:h-20 md:before:w-80 before:w-60'> {ele?.title}</h1>
+                    <p className='font-montserrate lg:text-xl text-sm md:text-lg font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark mb-6'>{ele?.title} </p>
                 </div>
                 <div className='lg:w-7/12 md:full relative z-10 '>
                   <Image
@@ -145,7 +145,7 @@ useEffect(()=>{
                 <div className='flex flex-wrap items-center	justify-between relative'>
                   <div className='w-full relative z-10'>
                       <div >
-                    <p className="font-poppins font-medium text-dark text-base leading-6 text-sm line-clamp-3 mb-2.5 mt-3" dangerouslySetInnerHTML={{ __html: ele?.description }}></p>
+                    <p className="font-montserrate font-medium text-dark text-base leading-6 text-sm line-clamp-3 mb-2.5 mt-3" dangerouslySetInnerHTML={{ __html: ele?.description }}></p>
                       </div>
                 
                 

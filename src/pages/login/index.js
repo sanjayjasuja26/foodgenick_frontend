@@ -88,7 +88,7 @@ export default function Login() {
 
         <section className='lg:pt-24 xl:pb-52	lg:pb-0 relative md:pt-16	pt-12 mb-28 md:mb-0'>
           <div className='lg:max-w-xxxl md:max-w-xxxl mx-auto px-3.5 relative'>
-            <h2 className="text-login font-poppins xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-5 md:mb-5 text-center z-10 relative lg:before:content-[attr(before)] before:absolute before:bg-login xl:before:h-52 xl:before:w-96 lg:before:h-52 md:before:h-20 lg:before:w-56 md:before:w-56 before:w-64 before:h-32 md:before:w-72 before:bg-10% before:bg-no-repeat xl:before:-top-14 before:-top-4 lg:before:-top-6 md:before:-top-3 before:-left-2.5 before:right-0 before:left-0 before:mx-auto before:-z-10 text-4xl pb-5 pt-5"><span className="text-yellow">Log</span>in</h2>
+            <h2 className="text-login font-montserrate xl:text-6xl lg:text-5xl md:text-4xl font-bold text-dark lg:mb-5 md:mb-5 text-center z-10 relative lg:before:content-[attr(before)] before:absolute before:bg-login xl:before:h-52 xl:before:w-96 lg:before:h-52 md:before:h-20 lg:before:w-56 md:before:w-56 before:w-64 before:h-32 md:before:w-72 before:bg-10% before:bg-no-repeat xl:before:-top-14 before:-top-4 lg:before:-top-6 md:before:-top-3 before:-left-2.5 before:right-0 before:left-0 before:mx-auto before:-z-10 text-4xl pb-5 pt-5"><span className="text-yellow">Log</span>in</h2>
             <div className='py-7 xl:max-w-5xl xl:mx-auto bg-grey lg:p-8 rounded-lg	drop-shadow-sm border-t-2	border-black mt-4 md:py-9	relative z-10 mb-5'>
               <Formik
                 initialValues={{ email: "", password: "" }}
@@ -116,7 +116,7 @@ export default function Login() {
                     <div className='flex flex-wrap flex-col items-center'>
                       <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-6'>
                         <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                          <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Email*</legend>
+                          <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Email*</legend>
                           {/* <input type="text" placeholder="Company's Email*" className='border-0 bg-transparent outline-0 width-full'/> */}
                           <Field name="email" placeholder="Email*" className='border-0 bg-transparent outline-0 w-full' />
                         </fieldset>
@@ -126,7 +126,7 @@ export default function Login() {
                       </div>
                       <div className='lg:w-2/4 md:w-2/4 w-full px-2.5 pb-2.5'>
                         <fieldset className='bg-white	rounded-md drop-shadow px-5	pt-2	pb-3 focus-within:border-b-2 border-b-yellow border-0'>
-                          <legend className='font-poppins text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Password*</legend>
+                          <legend className='font-montserrate text-xs	bg-white rounded-xl	font-medium	px-2 py-1.5'>Password*</legend>
                           <Field type={show ? "text" : "password"} name="password" placeholder="Password*" className='relative border-0 bg-transparent outline-0 w-full' />
                           {show ? <div className='absolute top-2 right-5 bottom-0' onClick={toggle}><Image src={Hide} alt="hide" /></div> : <div className='absolute top-2 right-5 bottom-0' onClick={toggle}><Image src={ShowImg} alt="show" /></div>}
                         </fieldset>
@@ -136,7 +136,7 @@ export default function Login() {
                       </div>
                       <Link href='/forgot' className='text-sm	underline lg:w-2/4 md:w-2/4 w-full pb-5 hover:text-yellow text-right	'>Forgot Password</Link>
                       <div className='text-center w-full'>
-                        <button type="submit" className='font-poppins text-base font-semibold	bg-black hover:bg-yellow hover:text-white duration-700 hover:border-yellow text-white uppercase	inline-block py-3.5 px-12	rounded-md'>Submit</button>
+                        <button type="submit" className='font-montserrate text-base font-semibold	bg-black hover:bg-yellow hover:text-white duration-700 hover:border-yellow text-white uppercase	inline-block py-3.5 px-12	rounded-md'>Submit</button>
                       </div>
                     </div>
 
