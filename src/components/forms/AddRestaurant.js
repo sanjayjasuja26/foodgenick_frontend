@@ -66,7 +66,6 @@ const AddRestaurant = (props) => {
         setShowpassword(!showpassword)
     }
 
-
     const uploadImageToS3 = async (file) => {
         
         const uploadParams = {
