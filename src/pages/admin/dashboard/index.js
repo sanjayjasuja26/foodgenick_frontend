@@ -17,15 +17,22 @@ import { constants } from "@/common/Constant";
 import restaurant from '../../../../public/assets/images/restaurants.svg'
 import user from '../../../../public/assets/images/users.svg'
 import varified from '../../../../public/assets/images/varified.svg'
-import Head from 'next/head'
+import Head from 'next/head';
+
+const ContentType = {
+  USERS: "Users",
+  RESTAURANTS: "Restaurants",
+  VERIFIED_RESTAURANTS: "Verified Restaurants",
+};
 export default function Admin() {
   const [page, setPage] = useState(0);
   const [rowsPerPage, setRowsPerPage] = useState(5);
   const [isOpen, setOpen] = useState(false);
-  const [rows, setRows] = useState([]);
-  const [resdata, setResdata] = useState(null);
-  const [verifideResdata, setVerifideResdata] = useState(null);
-   const userCount = rows.data && rows.data && rows.data.length
+  const [users, setUsers] = useState([]);
+  const [selectedContent, setSelectedContent] = useState(ContentType.RESTAURANTS);
+  const [restaurantData, setRestaurantData] = useState(null);
+  const [verifiedResdata, setVerifiedResdata] = useState(null);
+   const userCount = users.data && users.data && users.data.length
    const dispatch = useDispatch()
   const userToggleForm = () => setOpen(!isOpen);
     //const hideSidebar = isOpen ? ' xl:w-3/2 lg:w-3/4 md:w-3/5' : ' xl:w-full lg:w-full md:w-full';
@@ -36,23 +43,27 @@ useEffect ( ()=>{
       .then(response => response.json())
       .then(json => {
         console.log(json)
-        setRows(json)
+        setUsers(json);
       })
       getrestorantdata()
-      getverifideRestorantdata()
+      getverifiedRestorantdata()
     // eslint-disable-next-line react-hooks/exhaustive-deps
 },[])
 
+  console.log({
+    selectedContent
+  });
+  
 const getrestorantdata = async() =>{
 const data =  await dispatch(getRestaurantFunc())
 if(data && data.payload && data.payload.data){
-  setResdata(data.payload.data)
+  setRestaurantData(data.payload.data)
 }
 }
-const getverifideRestorantdata = async() =>{
+const getverifiedRestorantdata = async() =>{
 const data =  await dispatch(getVerifidRestaurantsFunc())
 if(data && data.payload && data.payload.data){
-  setVerifideResdata(data.payload.data)
+  setVerifiedResdata(data.payload.data)
 }
 }
 
@@ -62,14 +73,14 @@ const cardData=[
     "image": restaurant,
     "name": "Restaurants",
     "dis": "Total",
-    "views": `${resdata && resdata.length}`
+    "views": `${restaurantData && restaurantData.length}`
   },
   {
     "id": 2,
     "image": varified,
-    "name": "Verified Restaurants  ",
+    "name": "Verified Restaurants",
     "dis": "Total",
-    "views": `${verifideResdata && verifideResdata.length}`
+    "views": `${verifiedResdata && verifiedResdata.length}`
   },
   {
     "id": 3,
@@ -93,8 +104,6 @@ const handleChangeRowsPerPage = (event) => {
 
 
   return (
-
-
     <>   
       <Head>
         <title>Dashboard</title>
@@ -110,10 +119,10 @@ const handleChangeRowsPerPage = (event) => {
         <div className='flex justify-between gap-x-5 flex-shrink-none xl:flex-nowrap lg:flex-wrap md:flex-wrap sm:flex-wrap flex-wrap'>
           {cardData && cardData.map((ele,index)=>{
             return(
-              <div key={index} className='bg-white shadow-light rounded-xl card1 xl:w-1/2 w-full xl:mb-0 lg:mb-4 md:mb-5 sm:mb-5 mb-5 xs:mb-5 sm:p-7 p-5	 flex xl:flex-nowrap flex-wrap  justify-between md:text-start sm:justify-between justify-center hover:bg-blackLight ease-in duration-300 hover:ease-in group hover:text-white'>
+              <div key={index} className={`${selectedContent === ele.name ? "bg-blackLight text-white" : "bg-white"} shadow-light rounded-xl card1 xl:w-1/2 w-full xl:mb-0 lg:mb-4 md:mb-5 sm:mb-5 mb-5 xs:mb-5 sm:p-7 p-5	 flex xl:flex-nowrap flex-wrap md:text-start sm:justify-between justify-center ease-in duration-300 hover:ease-in group`} onClick={() => setSelectedContent(ele.name)}>
                 <div className='left xl:mb-0 lg:mb-4'>
                   <h5 className='font-montserrate font-semibold text-xl'>{ele.name}</h5>
-                  <h3 className='font-montserrate text-lightgrey font-normal group-hover:text-white'>{ele.dis}</h3>
+                  <h3 className='font-montserrat font-normal'>{ele.dis} {ele.views}</h3>
                 </div>
                 <div className='right'>
                   <Image src={ele.image} alt="Restaurant" className="w-14"/>
@@ -138,7 +147,7 @@ const handleChangeRowsPerPage = (event) => {
                   </TableRow>
                 </TableHead>
                 <TableBody>
-                  {rows && rows.data && rows.data.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row ,index) => (
+                  {users && users.data && users.data.slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage).map((row ,index) => (
                     <TableRow className="odd:bg-white even:bg-grey-light1"
                       key={index}
                       sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
