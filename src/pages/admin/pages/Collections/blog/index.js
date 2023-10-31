@@ -100,7 +100,6 @@ export default function Restaurant() {
           <h3 className='font-bold text-2xl mb-4 text-orange'>Data</h3>
           <TableContainer component={Paper} className='shadow-none'>
             <div className="px-8 bg-white shadow-light rounded-xl py-7">             
-              <div className="overflow-y-scroll max-h-30">
                 <Table sx={{ minWidth: 650 }} aria-label="simple table" className="overflow-x-scroll w-full happy">
                   <TableHead>
                     <TableRow className="bg-grey-light1">
@@ -123,7 +122,10 @@ export default function Restaurant() {
                           <TableCell align="right" className="text-sm font-montserrate text-lightgrey w-14 text-left">{val.id}</TableCell>
                           <TableCell align="right" className="text-sm font-montserrate text-lightgrey  text-left">{val.title}</TableCell>
                           <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">{val.description}</TableCell>
-                          <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">{val.image}</TableCell>
+                          <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left whitespace-nowrap	overflow-hidden	text-ellipsis	max-w-md">
+                            <Image src={val.image} alt={val.title} height="40" width="40" />
+                            {/* {val.image} */}
+                          </TableCell>
                           <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left" onClick={() => handleClickOpenEdit(val,"isEdit")} >
                             <Image src={edit} alt="delete" className="w-4	mr-2 cursor-pointer	"/></TableCell>
                           <TableCell align="right" className="text-sm font-montserrate text-lightgrey text-left" onClick={() => deleteHandleClickOpen(val)}><Image src={bin2} alt="delete" className="w-4	mr-2 cursor-pointer"/></TableCell>
@@ -137,7 +139,6 @@ export default function Restaurant() {
 
                   </TableBody>
                 </Table>
-              </div>
             </div>
           </TableContainer>
           

@@ -10,14 +10,13 @@ import React from "react";
 import Paper from "@mui/material/Paper";
 import moment from "moment/moment";
 
-const Restaurant = ({ restaurants, rowsPerPage, page }) => {
+const Restaurant = ({ restaurants, rowsPerPage, page, title }) => {
     console.log({ restaurant: restaurants[0] });
   return (
     <div className="mb-3 mt-7">
-      <h3 className="font-bold text-2xl mb-4 text-orange"> Restaurants</h3>
+          <h3 className="font-bold text-2xl mb-4 text-orange">{title}</h3>
       <TableContainer component={Paper} className="shadow-none">
         <div className="px-8 bg-white shadow-light rounded-xl py-7">
-          <div className="overflow-y-scroll max-h-30">
             <Table
               sx={{ minWidth: 650 }}
               aria-label="simple table"
@@ -112,7 +111,6 @@ const Restaurant = ({ restaurants, rowsPerPage, page }) => {
                     })}
               </TableBody>
             </Table>
-          </div>
         </div>
       </TableContainer>
     </div>

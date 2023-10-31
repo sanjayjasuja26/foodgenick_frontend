@@ -6,6 +6,7 @@ import TableCell from '@mui/material/TableCell';
 import TableContainer from '@mui/material/TableContainer';
 import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
+import { TablePagination } from "@mui/material";
 import Paper from '@mui/material/Paper';
 import Switch from '@mui/material/Switch';
 import 'react-toastify/dist/ReactToastify.css';
@@ -29,6 +30,8 @@ export default function Restaurant() {
   const restaurantStore = useSelector(RestaurantStore)
   const selecter = useSelector(getRestaurantData)
   const memoizedSelectedData = useMemo(() => selecter, [selecter]);
+  const [page, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(5);
   const [addResModal, setAddResModal] = useState(false)
   const [showViewModal, setShowViewModal] = useState(false);
   const [deleteResModal, setDeleteResModal] = useState(false)
@@ -72,7 +75,15 @@ export default function Restaurant() {
     setDeleteResModal(false);
     dispatch(getRestaurantFunc())
   };
-  const [isVerified, setIsVerified] = useState(false);
+
+  const handleChangePage = (event, newPage) => {
+    setPage(newPage);
+  };
+
+  const handleChangeRowsPerPage = (event) => {
+    setRowsPerPage(event.target.value);
+    setPage(0);
+  };
 
   const handleChange = async(value, id) => {
    if(id){
@@ -131,11 +142,13 @@ export default function Restaurant() {
         {restaurantStore && restaurantStore.loading ? (
           <div className="mb-3 mt-7">
             {/* <h3 className='font-bold text-2xl mb-4 text-orange'>Data</h3> */}
-            <TableContainer component={Paper} className="shadow-none ">
+            <TableContainer component={Paper} className="shadow-none">
               <div className="px-8 bg-white shadow-light rounded-xl py-7">
-                <div className="overflow-y-scroll w-855 max-h-thirty-two">
+                <div
+                // className="overflow-y-scroll w-855 max-h-thirty-two"
+                >
                   <Table
-                    sx={{ minWidth: 650 }}
+                    // sx={{ minWidth: 650 }}
                     aria-label="simple table"
                     className="overflow-x-scroll w-full"
                   >
@@ -221,7 +234,7 @@ export default function Restaurant() {
                                   align="right"
                                   className="text-sm font-montserrate text-lightgrey  text-left"
                                 >
-                                  {val.firstname}
+                                  {val.firstname} {val.lastName}
                                 </TableCell>
                                 <TableCell
                                   align="right"
@@ -307,6 +320,17 @@ export default function Restaurant() {
           </div>
         ) : (
           <h1>loading .....</h1>
+        )}
+        {testArr.length > 0 && (
+          <TablePagination
+            rowsPerPageOptions={[0, 5, 10, 15, 20]}
+            component="div"
+            count={testArr.length}
+            rowsPerPage={rowsPerPage}
+            page={page}
+            onPageChange={handleChangePage}
+            onRowsPerPageChange={handleChangeRowsPerPage}
+          />
         )}
         <ViewRestaurant
           open={showViewModal}

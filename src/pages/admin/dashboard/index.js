@@ -91,8 +91,6 @@ const cardData = [
   },
 ];
 
-
-
 const handleChangePage = (event, newPage) => {
   setPage(newPage);
 };
@@ -145,13 +143,19 @@ const handleChangeRowsPerPage = (event) => {
         </div>
         <div className="mb-3 mt-7">
           {selectedContent === ContentType.USERS && (
-            <User users={users} rowsPerPage={rowsPerPage} page={page} />
+            <User
+              users={users}
+              rowsPerPage={rowsPerPage}
+              page={page}
+              title={ContentType.USERS}
+            />
           )}
           {selectedContent === ContentType.RESTAURANTS && (
             <Restaurant
               restaurants={restaurantData}
               rowsPerPage={rowsPerPage}
               page={page}
+              title={ContentType.RESTAURANTS}
             />
           )}
           {selectedContent === ContentType.VERIFIED_RESTAURANTS && (
@@ -159,13 +163,22 @@ const handleChangeRowsPerPage = (event) => {
               restaurants={verifiedResData}
               rowsPerPage={rowsPerPage}
               page={page}
+              title={ContentType.VERIFIED_RESTAURANTS}
             />
           )}
           {selectedContent && (
             <TablePagination
               rowsPerPageOptions={[0, 5, 10, 15, 20]}
               component="div"
-              count={selectedContent === ContentType.USERS ? users.length : selectedContent === ContentType.RESTAURANTS ? restaurantData.length : selectedContent === ContentType.VERIFIED_RESTAURANTS ? verifiedResData.length : 0}
+              count={
+                selectedContent === ContentType.USERS
+                  ? users.length
+                  : selectedContent === ContentType.RESTAURANTS
+                  ? restaurantData.length
+                  : selectedContent === ContentType.VERIFIED_RESTAURANTS
+                  ? verifiedResData.length
+                  : 0
+              }
               rowsPerPage={rowsPerPage}
               page={page}
               onPageChange={handleChangePage}
