@@ -133,7 +133,7 @@ export default function Restaurant() {
             {/* <h3 className='font-bold text-2xl mb-4 text-orange'>Data</h3> */}
             <TableContainer component={Paper} className="shadow-none ">
               <div className="px-8 bg-white shadow-light rounded-xl py-7">
-                <div className="overflow-y-scroll max-h-thirty-two">
+                <div className="overflow-y-scroll w-855 max-h-thirty-two">
                   <Table
                     sx={{ minWidth: 650 }}
                     aria-label="simple table"

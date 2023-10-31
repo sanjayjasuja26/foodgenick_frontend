@@ -229,7 +229,7 @@ const [activeTab, setActiveTab] = useState('profile');
                 Verified Restaurants
               </h2>
               <Slider
-                className="lg:max-w-xxxl md:max-w-xxxl max-w-md mx-auto md:pl-7 pl-2 md:pr-7 pr-2"
+                className="md:pl-7 pl-2 md:pr-7 pr-2 home-varified-slider"
                 {...carouselSettings}
               >
                 {resdata &&
@@ -240,7 +240,7 @@ const [activeTab, setActiveTab] = useState('profile');
                       <div key={index}>
                         <div className="px-5 my-10">
                           <div key={index}>
-                            <div className="w-full bg-white drop-shadow-xl rounded-xl truncate">
+                            <div className="w-full bg-white drop-shadow-xl rounded-xl truncate  home-restaurant">
                               <div className="image w-full">
                                 <div className="bg-orange-400 py-2 px-3 text-10 text-white text-center w-48 absolute top-4 -left-14 -rotate-45">
                                   Verified
@@ -253,7 +253,7 @@ const [activeTab, setActiveTab] = useState('profile');
                                   height={400}
                                 />
                               </div>
-                              <div className="content p-5">
+                              <div className="content p-5 restaurant-text">
                                 <div className="mb-2 restaurant-kitchen">
                                   <h2 className="text-base font-semibold font-montserrate">
                                     {" "}
@@ -269,7 +269,7 @@ const [activeTab, setActiveTab] = useState('profile');
                                   </h2>
                                 </div>
                                 <div className="mb-2 restaurant-address">
-                                  <p className="text-base font-semibold font-montserrate">
+                                  <div className="text-base font-semibold font-montserrate">
                                     {" "}
                                     <Image
                                       style={{ display: "inline-block" }}
@@ -279,8 +279,9 @@ const [activeTab, setActiveTab] = useState('profile');
                                       width={18}
                                       height={18}
                                     />{" "}
-                                    {val.streetAddress},{val.city},{val.state}
-                                  </p>
+                                    {val.streetAddress}, {val.city}, {val.state}
+                                    
+                                  </div>
                                 </div>
                                 <div className="mb-2 restaurant-phn">
                                   <p className="text-base font-semibold font-montserrate">
@@ -314,26 +315,35 @@ const [activeTab, setActiveTab] = useState('profile');
             <h2 className="font-montserrate lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative lg:before:content-[attr(before)] before:absolute xl:before:h-28 before:h-20 xl:before:w-42r sm:before:w-96 before:w-80 before:bg-10% before:bg-no-repeat md:before:-top-5 before:-top-4 xl:before:-left-2.5 md:before:-left-2.5 before:right-0 before:left-0 before:mx-auto before:-z-10 text-4xl mb-8">
               Partners
             </h2>
+            <Slider className="lg:max-w-xxxl md:max-w-xxxl max-w-md mx-auto pl-7 pr-7"
+                      {...carouselSettings}
+                    >
+            <div className=''>
             {partners?.partner &&
               partners?.partner?.map((item, index) => {
+
                 return (
-                  <div key={index}>
-                    <div className="flex flex-wrap items-center	justify-between md:relative">
-                      <div className="lg:w-11/12 w-full lg:px-2.5 md:px-2.5 md:mb-0 mb-7	">
-                        <div className="sm:w-3/5 sm:mx-auto md:w-full w-full overflow-hidden rounded-l-full	rounded-tr-full	xl:rounded-br-180 lg:rounded-br-180 md:rounded-br-100 rounded-br-100 rounded-br-1-0  xl:h-96 lg:h-72 md:h-60 sm:h-72 h-64">
-                          <Image
-                            alt="Assured Hygiene"
-                            src={item.image}
-                            className="object-cover h-full w-full sm:ease-in sm:duration-700 sm:hover:h-500 sm:hover:w-500"
-                            width={300}
-                            height={300}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                
+                    <div key={index} className="lg:w-11/12 w-full lg:px-2.5 md:px-2.5 md:mb-0 mb-7">
+                     
+                       
+                          <div className="sm:w-3/5 sm:mx-auto md:w-full w-full xl:h-96 lg:h-72 md:h-60 sm:h-72 h-56 w-full bg-white drop-shadow-xl rounded-xl truncate">
+                            <Image
+                              alt="Assured Hygiene"
+                              src={item.image}
+                              className="w-full truncate object-cover h-full"
+                              width={300}
+                              height={300}
+                            />
+                          </div>
+                     </div>
+                     
+                
+            
                 );
               })}
+              </div>
+            </Slider>
           </div>
         </section>
 
@@ -343,26 +353,34 @@ const [activeTab, setActiveTab] = useState('profile');
             <h2 className="font-montserrate lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative lg:before:content-[attr(before)] before:absolute xl:before:h-28 before:h-20 xl:before:w-42r sm:before:w-96 before:w-80 before:bg-10% before:bg-no-repeat md:before:-top-5 before:-top-4 xl:before:-left-2.5 md:before:-left-2.5 before:right-0 before:left-0 before:mx-auto before:-z-10 text-4xl mb-8">
               Agencies
             </h2>
-            {partners?.agency &&
-              partners?.agency?.map((item, index) => {
-                return (
-                  <div key={index}>
-                    <div className="flex flex-wrap items-center	justify-between md:relative">
-                      <div className="lg:w-11/12 w-full lg:px-2.5 md:px-2.5 md:mb-0 mb-7	">
-                        <div className="sm:w-3/5 sm:mx-auto md:w-full w-full overflow-hidden rounded-l-full	rounded-tr-full	xl:rounded-br-180 lg:rounded-br-180 md:rounded-br-100 rounded-br-100 rounded-br-1-0  xl:h-96 lg:h-72 md:h-60 sm:h-72 h-64">
-                          <Image
-                            alt="Assured Hygiene"
-                            src={item.image}
-                            className="object-cover h-full w-full sm:ease-in sm:duration-700 sm:hover:h-500 sm:hover:w-500"
-                            width={300}
-                            height={300}
-                          />
-                        </div>
+            
+            <Slider className="lg:max-w-xxxl md:max-w-xxxl max-w-md mx-auto pl-7 pr-7"
+                      {...carouselSettings}
+                    >
+                      <div className=''>
+                {partners?.agency &&
+                partners?.agency?.map((item, index) => {
+                  return (
+                    <div key={index} className="lg:w-11/12 w-full lg:px-2.5 md:px-2.5 md:mb-0 mb-7">
+                      <div className="flex flex-wrap items-center	justify-between md:relative">
+                       
+                          <div className="sm:w-3/5 sm:mx-auto md:w-full w-full xl:h-96 lg:h-72 md:h-60 sm:h-72 h-56 w-full bg-white drop-shadow-xl rounded-xl truncate">
+                            <Image
+                              alt="Assured Hygiene"
+                              src={item.image}
+                              className="w-full truncate object-cover h-full"
+                              width={300}
+                              height={300}
+                            />
+                          </div>
+                        
                       </div>
                     </div>
-                  </div>
-                );
-              })}
+                  );
+                })}
+                </div>
+                </Slider>
+            
           </div>
         </section>
 

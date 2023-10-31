@@ -39,14 +39,14 @@ useEffect(()=>{
         {blogData && blogData.length > 0 && blogData.map((ele, index)=>{
           return (
             <div key={index}>
-              <section className="md:bg-right  md:bg-no-repeat 2xl:bg-700 xl:bg-680 lg:bg-590 md:bg-460 relative xl:py-48 md:py-48	py-14 services-image bg-about-banner">
+              <section className="md:bg-right  md:bg-no-repeat 2xl:bg-700 xl:bg-680 lg:bg-590 md:bg-460 relative xl:pb-48 xl:pt-24 md:py-28	py-14 services-image bg-about-banner">
                 <div className="lg:max-w-xxxl md:max-w-xxxl mx-auto md:pl-7 pl-2 md:pr-7 pr-2">
                   <div className="flex flex-wrap items-center	justify-between relative">
-                    <div className="lg:w-4/5 md:w-5/12">
+                    <div className="md:w-6/12">
                       <h3 className="bg-grey3 text-lightgrey text-base inline-block rounded-lg font-semibold px-3 py-1.5">
                         Foodgienic
                       </h3>
-                      <h1 className="text-32 leading-52 text-dark font-bold font-montserrate py-5">
+                      <h1 className="text-32 leading-52 text-dark font-bold font-montserrate py-5 ">
                         {ele?.title}
                       </h1>
                       <div className="flex items-center">
@@ -70,7 +70,7 @@ useEffect(()=>{
                   </div>
                 </div>
               </section>
-              <section className="relative xl:pt-64 xl:pb-36 xl:py-20 md:pt-40 md:pb-20 md:pt-16 pt-28 pb-20 bg-aboutbg bg-contain bg-no-repeat bg-repeat">
+              <section className="relative 2xl:pt-64 2xl:pb-36 xl:pt-44 xl:pb-36 md:pt-40 md:pb-20 md:pt-16 pt-28 pb-20 bg-aboutbg bg-contain bg-no-repeat bg-repeat">
                 <div className="lg:max-w-xxxl md:max-w-xxxl mx-auto md:pl-7 pl-2 md:pr-7 pr-2">
                   <div className="flex flex-wrap justify-between">
                     <div className="md:w-72% w-full">
@@ -83,7 +83,7 @@ useEffect(()=>{
                           className="md:h-466 w-full object-cover rounded-xl h-96	"
                         />
                       </div>
-                      <div
+                      <div className='font-montserrate font-medium text-dark text-base leading-6 text-sm  mb-0.5 mt-3 single-blog'
                         dangerouslySetInnerHTML={{ __html: ele?.description }}
                       />
                       {/* <p className="font-montserrate text-sm md:text-base font-medium text-dark lg:leading-9 md:leading-8 leading-6 text-dark mb-6">
@@ -102,7 +102,7 @@ useEffect(()=>{
                             </div>
                             <div className='w-[calc(100%-84px)]'>
                               <h3 class="bg-grey3 text-lightgrey text-xs inline-block rounded-lg font-semibold px-2.5 py-1">Foodgienic</h3>
-                              <h4 className='text-sm font-semibold text-ellipsis overflow-hidden whitespace-nowrap xl:w-56 md:w-36 w-48 pt-1'>Foodgienic is the symbol of hygienic</h4>
+                              <h4 className='text-sm font-semibold text-ellipsis overflow-hidden whitespace-nowrap lg:w-56 xl:w-44 md:w-36 w-48 pt-1'>Foodgienic is the symbol of hygienic</h4>
                               <a href="#" className='text-orange text-xs'>Read more</a>
                             </div>
                           </div>
@@ -112,7 +112,7 @@ useEffect(()=>{
                             </div>
                             <div className='w-[calc(100%-84px)]'>
                               <h3 class="bg-grey3 text-lightgrey text-xs inline-block rounded-lg font-semibold px-2.5 py-1">Foodgienic</h3>
-                              <h4 className='text-sm font-semibold text-ellipsis overflow-hidden whitespace-nowrap xl:w-56 md:w-36 w-48 pt-1'>Foodgienic is the symbol of hygienic</h4>
+                              <h4 className='text-sm font-semibold text-ellipsis overflow-hidden whitespace-nowrap lg:w-56 xl:w-44 md:w-36 w-48 pt-1'>Foodgienic is the symbol of hygienic</h4>
                               <a href="#" className='text-orange text-xs'>Read more</a>
                             </div>
                           </div>

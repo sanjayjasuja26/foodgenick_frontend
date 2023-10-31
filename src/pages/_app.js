@@ -110,7 +110,7 @@ export default function App({ Component, pageProps, router }) {
               {Component.getLayout ? (
                 <>
                   <AdminHead setIsOpen={setIsOpen} isOpen={isOpen}/>
-                  <div className='bg-grey-light min-w-full p-4 mb-0 admin-body'>
+                  <div className='bg-grey-light min-w-full p-4 mb-0'>
                     <div className='main-content foodposition flex items-start w-full columns-2 gap-x-4 lg:flex-nowrap md:flex-nowrap sm:flex-wrap flex-wrap'>
                       {/* {isOpen && <AdminNav />} */}
                       <div className={`slidebarmain ${isOpen ? 'activesibebar' : ''}`}>

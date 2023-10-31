@@ -147,9 +147,21 @@ button.slick-arrow.slick-next {
   -webkit-box-orient: vertical;
 }
 
-
-
-
+.single-blog p strong {
+  font-size: 17px;
+}
+.single-blog h2 strong {
+  font-size: 22px;
+}
+.home-varified-slider .slick-track {
+  width: unset !important;
+}
+.home-restaurant{
+  white-space: unset !important;
+}
+.restaurant-text{
+  min-height: 160px;
+}
 /* responisive-19-06-2023 */
 @media only screen and (max-width:1279px){
   .content-area {
