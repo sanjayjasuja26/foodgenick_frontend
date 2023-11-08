@@ -40,7 +40,7 @@ import UserSignup from '@/components/forms/userSignup';
 import RestaurantSignup from '@/components/forms/restaurantSignup';
 import { Button, Paper } from '@mui/material';
 import Slider from 'react-slick';
-import { constants, carouselSettings } from '@/common/Constant';
+import { constants, carouselSettings, testSettings } from '@/common/Constant';
 // import { HomeData } from '@/common/PagesContent';
 import { useDispatch, useSelector } from 'react-redux';
 import { getAllDynamicData, getHomeData } from '@/app/auth/store/Slices/DynamicContentSlice';
@@ -67,7 +67,8 @@ export default function Home() {
   },[])
 
   const getApi = async () => {
-    const data = await dispatch(getAllDynamicData())
+    const data = await dispatch(getAllDynamicData());
+    console.log({ data });
     setPartners(data?.payload?.data?.partners_page_sections);
   }
 
@@ -309,109 +310,85 @@ const [activeTab, setActiveTab] = useState('profile');
         </section>
 
         {/* Partner Section */}
-        <section className="bg-center	bg-100% bg-no-repeat md:py-32 pb-24	pt-28">
+        {(partners?.partner && partners.partner.length > 0) &&
+        <section className="bg-center	bg-100% bg-no-repeat md:py-20 pb-24	pt-28">
           <div className=" lg:max-w-xxxl md:max-w-xxxl mx-auto  md:pl-7 pl-2 md:pr-7 pr-2">
             <h2 className="font-montserrate lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative lg:before:content-[attr(before)] before:absolute xl:before:h-28 before:h-20 xl:before:w-42r sm:before:w-96 before:w-80 before:bg-10% before:bg-no-repeat md:before:-top-5 before:-top-4 xl:before:-left-2.5 md:before:-left-2.5 before:right-0 before:left-0 before:mx-auto before:-z-10 text-4xl mb-8">
               Partners
             </h2>
-            <Slider className="lg:max-w-xxxl md:max-w-xxxl max-w-md mx-auto pl-7 pr-7"
-                      {...carouselSettings}
-                    >
-            <div className=''>
-            {partners?.partner &&
-              partners?.partner?.map((item, index) => {
-
+            <div className='flex flex-wrap justify-center items-center mx-4'>
+            {
+              partners.partner.map((item, index) => {
                 return (
-                
-                    <div key={index} className="lg:w-11/12 w-full lg:px-2.5 md:px-2.5 md:mb-0 mb-7">
-                     
-                       
-                          <div className="sm:w-3/5 sm:mx-auto md:w-full w-full xl:h-96 lg:h-72 md:h-60 sm:h-72 h-56 w-full bg-white drop-shadow-xl rounded-xl truncate">
-                            <Image
-                              alt="Assured Hygiene"
-                              src={item.image}
-                              className="w-full truncate object-cover h-full"
-                              width={300}
-                              height={300}
-                            />
-                          </div>
-                     </div>
-                     
-                
-            
+                  <div key={index}>
+                          <Image
+                            alt="Assured Hygiene"
+                            src={item.image}
+                            className="rounded rounded-circle p-6"
+                            width={250}
+                            height={250}
+                          />
+                      </div>
                 );
               })}
-              </div>
-            </Slider>
+            </div>
           </div>
         </section>
+        }
 
         {/* Agency Section */}
-        <section className="bg-center	bg-100% bg-no-repeat md:py-32 pb-24	pt-28">
+        {(partners?.agency && partners.agency.length > 0) &&
+        <section className="bg-center	bg-100% bg-no-repeat md:py-12 pb-24	pt-28">
           <div className=" lg:max-w-xxxl md:max-w-xxxl mx-auto  md:pl-7 pl-2 md:pr-7 pr-2">
             <h2 className="font-montserrate lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative lg:before:content-[attr(before)] before:absolute xl:before:h-28 before:h-20 xl:before:w-42r sm:before:w-96 before:w-80 before:bg-10% before:bg-no-repeat md:before:-top-5 before:-top-4 xl:before:-left-2.5 md:before:-left-2.5 before:right-0 before:left-0 before:mx-auto before:-z-10 text-4xl mb-8">
               Agencies
             </h2>
-            
-            <Slider className="lg:max-w-xxxl md:max-w-xxxl max-w-md mx-auto pl-7 pr-7"
-                      {...carouselSettings}
-                    >
-                      <div className=''>
-                {partners?.agency &&
-                partners?.agency?.map((item, index) => {
-                  return (
-                    <div key={index} className="lg:w-11/12 w-full lg:px-2.5 md:px-2.5 md:mb-0 mb-7">
-                      <div className="flex flex-wrap items-center	justify-between md:relative">
-                       
-                          <div className="sm:w-3/5 sm:mx-auto md:w-full w-full xl:h-96 lg:h-72 md:h-60 sm:h-72 h-56 w-full bg-white drop-shadow-xl rounded-xl truncate">
-                            <Image
-                              alt="Assured Hygiene"
-                              src={item.image}
-                              className="w-full truncate object-cover h-full"
-                              width={300}
-                              height={300}
-                            />
-                          </div>
-                        
+            <div className='flex justify-center items-center mx-4'>
+            {
+              partners.agency.map((item, index) => {
+                return (
+                  <div key={index}>
+                          <Image
+                            alt="Assured Hygiene"
+                            src={item.image}
+                            className="rounded rounded-circle"
+                            width={250}
+                            height={250}
+                          />
                       </div>
-                    </div>
-                  );
-                })}
-                </div>
-                </Slider>
-            
+                );
+              })}
+            </div>
           </div>
         </section>
+        }
 
         {/* Brand Section */}
-        <section className="bg-center	bg-100% bg-no-repeat md:py-32 pb-24	pt-28">
+        {(partners?.brand && partners.brand.length > 0) &&
+        <section className="bg-center	bg-100% bg-no-repeat md:py-12 pb-24	pt-28">
           <div className=" lg:max-w-xxxl md:max-w-xxxl mx-auto  md:pl-7 pl-2 md:pr-7 pr-2">
             <h2 className="font-montserrate lg:text-5xl md:text-4xl font-bold text-dark lg:mb-20 md:mb-10 text-center z-10 relative lg:before:content-[attr(before)] before:absolute xl:before:h-28 before:h-20 xl:before:w-42r sm:before:w-96 before:w-80 before:bg-10% before:bg-no-repeat md:before:-top-5 before:-top-4 xl:before:-left-2.5 md:before:-left-2.5 before:right-0 before:left-0 before:mx-auto before:-z-10 text-4xl mb-8">
               Brands
             </h2>
-            {partners?.brand &&
+            <div className='flex justify-center items-center mx-4'>
+            {
               partners?.brand?.map((item, index) => {
                 return (
                   <div key={index}>
-                    <div className="flex flex-wrap items-center	justify-between md:relative">
-                      <div className="lg:w-11/12 w-full lg:px-2.5 md:px-2.5 md:mb-0 mb-7	">
-                        <div className="sm:w-3/5 sm:mx-auto md:w-full w-full overflow-hidden rounded-l-full	rounded-tr-full	xl:rounded-br-180 lg:rounded-br-180 md:rounded-br-100 rounded-br-100 rounded-br-1-0  xl:h-96 lg:h-72 md:h-60 sm:h-72 h-64">
                           <Image
                             alt="Assured Hygiene"
                             src={item.image}
-                            className="object-cover h-full w-full sm:ease-in sm:duration-700 sm:hover:h-500 sm:hover:w-500"
-                            width={300}
-                            height={300}
+                            className="rounded rounded-circle"
+                            width={250}
+                            height={250}
                           />
-                        </div>
                       </div>
-                    </div>
-                  </div>
                 );
               })}
+            </div>
           </div>
         </section>
-
+        }
         {/* </section> */}
 
         <section className="lg:pt-24 xl:pb-20	lg:pb-0 relative md:pt-16	pt-12	">
